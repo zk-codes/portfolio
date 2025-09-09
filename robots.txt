@@ -1,0 +1,6 @@
+Sitemap: https://lunaseeker.com/sitemap.xml
+
+User-agent: *
+Allow: /
+
+Disallow: /assets/scripts/

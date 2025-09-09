@@ -1,0 +1,402 @@
+/* ---------- Fonts */
+
+/* -- Body */
+
+@font-face {
+    font-family: "Pirata One";
+    src: url("/assets/fonts/pirata-one.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Vollkorn";
+    src: url("/assets/fonts/vollkorn.ttf") format("truetype"),
+         url("/assets/fonts/vollkorn-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------- Variables */
+
+:root {
+
+    /* -- Colors */
+
+    --parchment: #fdf6e3;
+    --text: #181A1A;
+    --dust-gold: #c9a961;
+    --whisper: #f5f1e8;
+    --shadow: rgba(44, 62, 45, 0.1);
+    --soft-shadow: rgba(44, 62, 45, 0.05);
+    --fern: #6b8e23;
+    --sky: #87ceeb;
+    --sunset: #ff6b47;
+    --forest: #228b22;
+
+}
+
+/* ---------- Background */
+
+/* -- Base Layer */
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(160, 82, 45, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(139, 69, 19, 0.06) 0%, transparent 35%),
+        radial-gradient(circle at 60% 20%, rgba(205, 133, 63, 0.04) 0%, transparent 30%),
+        radial-gradient(circle at 30% 80%, rgba(222, 184, 135, 0.05) 0%, transparent 45%),
+        repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(139, 69, 19, 0.06) 3px, rgba(139, 69, 19, 0.06) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 4px, rgba(160, 82, 45, 0.04) 4px, rgba(160, 82, 45, 0.04) 5px),
+        #f9f6f0;
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* -- Secondary Layer */
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3C!-- Leaf 1 - rotated 25 degrees --%3E%3Cg transform='rotate(25 40 35)'%3E%3Cpath d='M40 15 C35 15, 30 20, 30 30 C28 33, 26 36, 28 39 C30 42, 33 43, 30 47 C27 51, 30 54, 33 57 C36 60, 38 63, 40 70 C42 63, 44 60, 47 57 C50 54, 53 51, 50 47 C47 43, 50 42, 52 39 C54 36, 52 33, 50 30 C50 20, 45 15, 40 15 Z' fill='%238b4513' fill-opacity='0.08' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.05'/%3E%3Cpath d='M40 18 L40 65' stroke='%23654321' stroke-width='0.4' stroke-opacity='0.08'/%3E%3C/g%3E%3C!-- Leaf 2 - rotated -15 degrees --%3E%3Cg transform='rotate(-15 140 80)'%3E%3Cellipse cx='140' cy='80' rx='12' ry='18' fill='%23a0522d' fill-opacity='0.07' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.04'/%3E%3Cpath d='M140 65 L140 95' stroke='%23654321' stroke-width='0.4' stroke-opacity='0.07'/%3E%3Cpath d='M140 70 L132 73 M140 75 L148 77 M140 85 L135 88' stroke='%23654321' stroke-width='0.2' stroke-opacity='0.05'/%3E%3C/g%3E%3C!-- Leaf 3 - rotated 45 degrees --%3E%3Cg transform='rotate(45 60 140)'%3E%3Cpath d='M60 125 C55 130, 50 135, 53 140 C57 138, 63 138, 67 140 C70 135, 65 130, 60 125 Z M60 140 C55 145, 50 150, 53 155 C57 153, 63 153, 67 155 C70 150, 65 145, 60 140 Z M60 155 L60 165' fill='%238b4513' fill-opacity='0.06' stroke='%23654321' stroke-width='0.2' stroke-opacity='0.04'/%3E%3Cpath d='M60 130 L60 160' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.06'/%3E%3C/g%3E%3C!-- Leaf 4 - rotated -30 degrees --%3E%3Cg transform='rotate(-30 170 40)'%3E%3Cpath d='M170 25 L165 35 L155 32 L160 45 L150 48 L160 52 L155 62 L165 58 L170 68 L175 58 L185 62 L180 52 L190 48 L180 45 L185 32 L175 35 Z' fill='%23a0522d' fill-opacity='0.06' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.04'/%3E%3Cpath d='M170 30 L170 63' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.06'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat 0 0 / 200px 200px;
+    pointer-events: none;
+    z-index: -1;
+
+}
+
+figcaption {
+    font-size: 0.75em;
+    text-align: center;
+    text-decoration: wavy;
+    font-style: italic;
+}
+
+
+/* ---------- Basic Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 1.4em;
+}
+
+body {
+    font-family: 'Vollkorn', 'Palantino Linotype', serif;
+    line-height: 1.8;
+    color: var(--text);
+    background: linear-gradient(135deg, var(--parchment) 0%, var(--whisper) 100%);
+    min-height: 100vh;
+    position: relative;
+    max-width: 50rem;
+    margin: auto;
+}
+
+
+/* ---------- Typography */
+
+/* -- Headings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pirata One', 'Palantino Linotype', serif;
+    font-weight: 700;
+    margin: 0.6em 0;
+    color: var(--forest);
+    position: relative;
+}
+
+/* -- Main H1 */
+
+h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    position: relative;
+}
+
+h1::after {
+    content: '🌿';
+    position: absolute;
+    bottom: -0.5em;
+    right: 0.5;
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+/* -- Subheadings */
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+/* -- Paragraphs */
+
+p {
+    margin-bottom: 1.5em;
+    hanging-punctuation: first last;
+}
+
+.site-name {
+    font-size: 1.1em;
+}
+
+.smalltext {
+    font-size: 0.7em;
+}
+
+/* -- Lists */
+
+li::before:not(nav li) {
+    content: '🍃';
+    color: var(--fern);
+    font-size: 0.9em;
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    z-index: 1;
+}
+
+ul, ol {
+    margin: 1.5em 0;
+    padding-left: 2em;
+}
+
+nav li {
+    font-size: 0.8em;
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 0.8em;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+/* -- Links + Interactive Elements */
+
+a {
+    color: var(--fern);
+    text-decoration: underline;
+    text-decoration-color: var(--fern);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--sunset);
+    text-decoration-color: var(--dust-gold);
+    text-shadow: 0 1px 3px var(--soft-shadow);
+    transform: translateY(-1px);
+    text-decoration-thickness: 3px;
+}
+
+a[rel="noopener"]:not(:has(img))::after {
+    content: url('/assets/link.svg');
+    display: inline;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.25em;
+    vertical-align: middle;
+    position: static;
+}
+
+p:hover  {
+    transition: all 0.4s ease;
+    transform: translateX(2px);
+    text-shadow: 0 1px 4px var(--soft-shadow);
+}
+
+::selection {
+    background: var(--forest);
+    color: var(--text);
+    text-shadow: none;
+}
+
+/* -- Forms */
+
+form {
+    border-top: 2px double var(--text);
+    border-bottom: 2px double var(--text);
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+form, label, input, button, select, option {
+    font-family: 'Vollkorn', 'Palantino Linotype', serif;
+    margin-bottom: 0.25em;
+}
+
+input, button, select, option {
+    font-size: 1em;
+    padding: 0.35em;
+}
+
+select, option, button {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* -- Quotes */
+
+blockquote {
+    margin: 2em 0;
+    padding: 1.5em 2em;
+    border-left: 6px solid var(--forest);
+    border-top: 1px solid var(--fern);
+    border-bottom: 1px solid var(--fern);
+    font-style: italic;
+    box-shadow: 0 4px 12px var(--soft-shadow);
+}
+
+blockquote cite {
+    display: block;
+    font-size: 0.9em;
+    font-style: normal;
+}
+
+blockquote cite::before {
+    content: '— ';
+}
+
+/* -- Code */
+
+pre code {
+    font-size: 0.85em;
+    line-height: 1.5;
+    font-family: monospace;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.2em 0.4em;
+    color: var(--ink-medium);
+    border: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+/* ---------- Layout */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: min(5vw, 3rem);
+    padding: 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+.site-name {
+    font-weight: 600;
+}
+
+hr {
+    border-top: 6px double var(--text);
+}
+
+footer h2 {
+    margin-top: 0.5em;
+}
+
+#main {
+    max-width: 35rem;
+    margin-bottom: 3rem;
+}
+
+article {
+    max-width: 35em;
+}
+
+img, picture {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0.75em;
+}
+
+.image-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+    gap: 0.5rem;
+    width: 100%;
+}
+
+/* -- Responsive + Media Queries  */
+
+/* -- Reduced Motion */
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* -- Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --parchment: #1e2019;
+        --whisper: #252820;
+        --ink-dark: #e8e5d3;
+        --ink-medium: #c5c2b0;
+        --ink-light: #a8a594;
+        --shadow: rgba(255, 255, 255, 0.1);
+        --soft-shadow: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* -- Responsive */
+
+@media (max-width: 40em) {
+    main {
+        display: block;
+    }
+
+    nav {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
