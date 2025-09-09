@@ -1,2 +1,7 @@
-/.vscode
-/scripts
+# Folders 
+/.vscode/
+/scripts/
+
+# Files
+/.vscode/sftp.json
+/scripts/submissions.php
