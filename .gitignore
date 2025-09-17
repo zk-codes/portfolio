@@ -1,7 +1,6 @@
 # Folders 
-/.vscode/
-/scripts/
+.vscode/
+assets/scripts/
 
 # Files
-/.vscode/sftp.json
-/scripts/submissions.php
+.vscode/sftp.json
