@@ -1,833 +1,434 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:zk="https://zacharykai.net/sitemap-ext">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:ls="https://lunaseeker.com/sitemap-ext">
 
+    <!-- Homepage -->
     <url>
-        <zk:title>Homepage</zk:title>
-        <loc>https://zacharykai.net/</loc>
+        <ls:title>Homepage</ls:title>
+        <loc>https://lunaseeker.com/</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>My site. Explore my space fantasy writing, IndieWeb projects, and more.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>about_me</zk:subcategory>
+        <ls:category>pages</ls:category>
     </url>
 
     <!-- PAGES -->
 
+    <!-- About -->
     <url>
-        <zk:title>About</zk:title>
-        <loc>https://zacharykai.net/about</loc>
+        <ls:title>About</ls:title>
+        <loc>https://lunaseeker.com/about</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>My mini autobiography, press, representative avatars, intentions, and wishes.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>about_me</zk:subcategory>
+        <ls:category>pages</ls:category>
     </url>
 
+    <!-- Colophon -->
     <url>
-        <zk:title>Art</zk:title>
-        <loc>https://zacharykai.net/art</loc>
+        <ls:title>Colophon</ls:title>
+        <loc>https://lunaseeker.com/colophon</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>My portfolio of collages, digital art, drawings and gods eyes.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
+        <ls:category>pages</ls:category>
+    </url>
+    
+    <!-- CV -->
+    <url>
+        <ls:title>CV</ls:title>
+        <loc>https://lunaseeker.com/cv</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>pages</ls:category>
     </url>
 
+    <!-- Newsletter -->
     <url>
-        <zk:title>Blogroll</zk:title>
-        <loc>https://zacharykai.net/blogroll</loc>
+        <ls:title>Newsletter</ls:title>
+        <loc>https://lunaseeker.com/newsletter/</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>What I like to enjoy on the internet. Plus my favorite 88x31 buttons.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
+        <ls:category>pages</ls:category>
     </url>
 
+    <!-- Offerings -->
     <url>
-        <zk:title>Bookmarklets</zk:title>
-        <loc>https://zacharykai.net/bookmarklets</loc>
+        <ls:title>Offerings</ls:title>
+        <loc>https://lunaseeker.com/offerings</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Useful snippets of Javascript.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
+        <ls:category>pages</ls:category>
     </url>
 
+    <!-- Press -->
     <url>
-        <zk:title>Bookmarks</zk:title>
-        <loc>https://zacharykai.net/bookmarks</loc>
+        <ls:title>Press</ls:title>
+        <loc>https://lunaseeker.com/press</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Links I've found fascinating.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
+        <ls:category>pages</ls:category>
     </url>
 
+    <!-- Sitemap -->
     <url>
-        <zk:title>Books</zk:title>
-        <loc>https://zacharykai.net/books</loc>
+        <ls:title>Sitemap</ls:title>
+        <loc>https://lunaseeker.com/sitemap</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>All my novels, published, and soon-to-be.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>about_me</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Changelog</zk:title>
-        <loc>https://zacharykai.net/changelog</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>All site changes, reverse-chronologically.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Colophon</zk:title>
-        <loc>https://zacharykai.net/colophon</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>More on this site, accessibility, internet principles, numbers, and esoterica.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>CV</zk:title>
-        <loc>https://zacharykai.net/cv</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>My skills, experience, qualifications, and testimonials.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>about_me</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Defaults</zk:title>
-        <loc>https://zacharykai.net/defaults</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>The default apps/tools I use.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>FAQ</zk:title>
-        <loc>https://zacharykai.net/faq</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Answers to questions.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>about_me</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Guestbook</zk:title>
-        <loc>https://zacharykai.net/guestbook</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Go on, sign it!</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Hello</zk:title>
-        <loc>https://zacharykai.net/hello</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Details on contacting me: email, meet, message, or trade with me (please do!)</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Ideas</zk:title>
-        <loc>https://zacharykai.net/ideas</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Things I'd like to make and concepts that've caught my attention.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Interests</zk:title>
-        <loc>https://zacharykai.net/interests</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>What fascinates me.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>about_me</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Jots</zk:title>
-        <loc>https://zacharykai.net/jots</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>My microblog, with occasional today-I-learned updates.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Mentions</zk:title>
-        <loc>https://zacharykai.net/mentions</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Recording my webmentions: sent and recieved.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Music</zk:title>
-        <loc>https://zacharykai.net/music</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>My favorite songs and three years of Spotify listening stats.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Newsletter</zk:title>
-        <loc>https://zacharykai.net/newsletter</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>My monthlyish missive, with (hopefully) interesting esoterica, links, and reads.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Now</zk:title>
-        <loc>https://zacharykai.net/now</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>What I'm currently reading and working on.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>about_me</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Photos</zk:title>
-        <loc>https://zacharykai.net/photos</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>My gallery of shots.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Random</zk:title>
-        <loc>https://zacharykai.net/random</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Click this link to go to a random page on my site!</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Recipes</zk:title>
-        <loc>https://zacharykai.net/recipes</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Tested, simplified favorites.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Search</zk:title>
-        <loc>https://zacharykai.net/search</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Use it to find what you're looking for.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Sitemap</zk:title>
-        <loc>https://zacharykai.net/sitemap</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>A curated index of everything on my site.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
+        <ls:category>pages</ls:category>
     </url>
 
-    <url>
-        <zk:title>Un Office Hours</zk:title>
-        <loc>https://zacharykai.net/unoffice-hours</loc>
-        <lastmod>2025-04-14</lastmod>
-        <zk:content></zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-   
-    <url>
-        <zk:title>Uses</zk:title>
-        <loc>https://zacharykai.net/uses</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>The tech tooks I use + referral links for services I find useful (and you might too!)</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>collections</zk:subcategory>
-    </url>
-   
-    <url>
-        <zk:title>Webrings</zk:title>
-        <loc>https://zacharykai.net/webrings</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>The ones I'm part of.</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Workshops</zk:title>
-        <loc>https://zacharykai.net/workshops</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Would you like me to run one for your group?</zk:content>
-        <zk:category>pages</zk:category>
-        <zk:subcategory>site_info</zk:subcategory>
-    </url>   
-
-    <!-- LISTS -->
+    <!-- EVENTS -->
 
     <url>
-        <zk:title>Fanfic Writers Collective</zk:title>
-        <loc>https://zacharykai.net/lists/fanfiction</loc>
-        <lastmod>2025-04-14</lastmod>
-        <zk:content>A directory of folks with sites writing fanfiction.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>lists</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Oceania Web Atlas</zk:title>
-        <loc>https://zacharykai.net/lists/oceania</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>A directory of sites by people living in or from Oceania.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>lists</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Queer Web Directory</zk:title>
-        <loc>https://zacharykai.net/lists/queer</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>A directory of sites by queer folks around the world.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>lists</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>Star Wars Webring</zk:title>
-        <loc>https://zacharykai.net/lists/starwars</loc>
-        <lastmod>2025-07-06</lastmod>
-        <zk:content>A webring for folks who enjoy Star Wars</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>lists</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>Static HTML Site Directory</zk:title>
-        <loc>https://zacharykai.net/lists/html</loc>
-        <lastmod>2025-07-10</lastmod>
-        <zk:content>A directory of sites running on Static HTML files.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>lists</zk:subcategory>
-    </url>
-
-    <!-- NOTES -->
-
-    <url>
-        <zk:title>35 Things That Made My 2024</zk:title>
-        <loc>https://zacharykai.net/notes/24list</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>What I appreciated in the year.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Authenticity On The Web</zk:title>
-        <loc>https://zacharykai.net/notes/authenticity</loc>
-        <lastmod>2025-04-19</lastmod>
-        <zk:content>Why does it mean so many conflicting things on the internet?</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>A Sense Of Place</zk:title>
-        <loc>https://zacharykai.net/notes/place</loc>
-        <lastmod>2025-07-05</lastmod>
-        <zk:content>What a strange concept when your existence oscillates between countries, continents, and time zones.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Blog Questions Challenge 2025</zk:title>
-        <loc>https://zacharykai.net/notes/blogqna25</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>My answers to the questions posed.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Goals For 2025</zk:title>
-        <loc>https://zacharykai.net/notes/25goals</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Things I wish to achieve.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>How Travel Is An Engine For Writing</zk:title>
-        <loc>https://zacharykai.net/notes/writingengine</loc>
-        <lastmod>2025-07-05</lastmod>
-        <zk:content>I thought about how it might make me a better writer.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>The Unexpected Ambassador</zk:title>
-        <loc>https://zacharykai.net/notes/icmar25</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>To exist is to explain.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Indieweb Movie Club: Apr 2025</zk:title>
-        <loc>https://zacharykai.net/notes/iwmapr25</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>The Castle (1997)</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>resources</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Liminal Festival (2024)</zk:title>
-        <loc>https://zacharykai.net/notes/lf24</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>What I took from the conversations.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Mildura Writers Festival (2024)</zk:title>
-        <loc>https://zacharykai.net/notes/mwf24</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>What I learned from attending.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Minds Within Mine</zk:title>
-        <loc>https://zacharykai.net/notes/mwm</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>What my characters might say about me.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Music Questions Challenge</zk:title>
-        <loc>https://zacharykai.net/notes/musicqna</loc>
-        <lastmod>2025-04-19</lastmod>
-        <zk:content>A litte insight into my musical tastes.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>My 2025 Goals So Far</zk:title>
-        <loc>https://zacharykai.net/notes/25qreview</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Let's do a six-month review and see how I went!</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>No Going Back</zk:title>
-        <loc>https://zacharykai.net/notes/noreturn</loc>
-        <lastmod>2025-04-19</lastmod>
-        <zk:content>If you search for me on social media, you won’t find me.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Punchy Prose</zk:title>
-        <loc>https://zacharykai.net/notes/pp</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Words I watch for in my writing, to replace/remove for stronger prose.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>resources</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Proust's Questionnaire</zk:title>
-        <loc>https://zacharykai.net/notes/proust</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>My answers to these time-honored questions.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>Shot Silk And Sapphire Spiders</zk:title>
-        <loc>https://zacharykai.net/notes/silknspiders</loc>
-        <lastmod>2025-06-24</lastmod>
-        <zk:content>If there’s one thing I need to learn, it’s finding joy in nuance.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Site Ideas</zk:title>
-        <loc>https://zacharykai.net/notes/site-ideas</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Suggestions for what to put on your site.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>resources</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>Syzygy</zk:title>
-        <loc>https://zacharykai.net/notes/syzygy</loc>
-        <lastmod>2025-07-05</lastmod>
-        <zk:content>When I first encountered this word...I didn’t know how to pronounce it, let alone its meaning!</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>The Colbert Questionert</zk:title>
-        <loc>https://zacharykai.net/notes/colbert</loc>
-        <lastmod>2025-04-19</lastmod>
-        <zk:content>My answers to these fifteen questions.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>The Fictional Worlds I'd Live In</zk:title>
-        <loc>https://zacharykai.net/notes/otherworlds</loc>
-        <lastmod>2025-06-24</lastmod>
-        <zk:content>If I had a one-way ticket, where would I go?</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>The Notification I Look Forward To The Most</zk:title>
-        <loc>https://zacharykai.net/notes/notifications</loc>
-        <lastmod>2025-06-24</lastmod>
-        <zk:content>How am I supposed to do this phrase justice, given I’ve had my phone muted for years?</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>trades</zk:subcategory>
-    </url>
-
-    <url>
-        <zk:title>Things To Do While Waiting</zk:title>
-        <loc>https://zacharykai.net/notes/waiting</loc>
-        <lastmod>2025-04-19</lastmod>
-        <zk:content>Liminal time isn't a curse. It's an opportunity.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>resources</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Things You'd Perhaps Enjoy</zk:title>
-        <loc>https://zacharykai.net/notes/rdec24</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Things I wish to share with you, hoping you'll enjoy them.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>resources</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>What Is This Feeling, If Not Love?</zk:title>
-        <loc>https://zacharykai.net/notes/tooeasily</loc>
-        <lastmod>2025-04-19</lastmod>
-        <zk:content>I do this all the time. And not in the conventional sense.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>reflections</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Writing Sparks</zk:title>
-        <loc>https://zacharykai.net/notes/sparks</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Prompts for braving the blank page.</zk:content>
-        <zk:category>notes</zk:category>
-        <zk:subcategory>resources</zk:subcategory>
-    </url>
-
-    <!-- STORIES -->
-
-    <url>
-        <zk:title>At Ease, Soldier</zk:title>
-        <loc>https://zacharykai.net/stories/aes</loc>
+        <ls:title>Events</ls:title>
+        <loc>https://lunaseeker.com/events/</loc>
         <lastmod>2025-05-28</lastmod>
-        <zk:content>After decades of fractured identities, Bucky Barnes must confront his troubled past to reclaim himself and discover who he truly is.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>fanfiction</zk:subcategory>
+        <ls:category>events</ls:category>
+    </url>
+
+    <url>
+        <ls:title>HTML Day</ls:title>
+        <loc>https://lunaseeker.com/events/htmlday</loc>
+        <lastmod>2025-05-28</lastmod>
+        <ls:category>events</ls:category>
+    </url>
+
+    <!-- CATALOG -->
+
+    <url>
+        <ls:title>Catalog</ls:title>
+        <loc>https://lunaseeker.com/catalog/</loc>
+        <lastmod>2025-05-28</lastmod>
+        <ls:category>catalog</ls:category>
+    </url>
+
+    <!-- Stories -->
+
+    <!-- At Ease, Soldier -->
+    <url>
+        <ls:title>At Ease, Soldier</ls:title>
+        <loc>https://lunaseeker.com/catalog/aes</loc>
+        <lastmod>2025-05-28</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
+    </url>
+    
+    <!-- Break Yourself Against The Universe -->
+    <url>
+        <ls:title>Break Yourself Against The Universe</ls:title>
+        <loc>https://lunaseeker.com/catalog/break</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Break Yourself Against The Universe</zk:title>
-        <loc>https://zacharykai.net/stories/break</loc>
+        <ls:title>Bridging The Worlds</ls:title>
+        <loc>https://lunaseeker.com/catalog/worlds</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A lone survivor flees his ruined world, and with the unwanted help of his companion, he seeks redemption on a strange planet.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Bridging The Worlds</zk:title>
-        <loc>https://zacharykai.net/stories/worlds</loc>
+        <ls:title>Don't Show Her The Truth</ls:title>
+        <loc>https://lunaseeker.com/catalog/truth</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>At the edge of a war-ravaged world, she and her brother flee through a haunted abyss, chased by shadows. Their only hope lies in the light beyond.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Don't Show Her The Truth</zk:title>
-        <loc>https://zacharykai.net/stories/truth</loc>
+        <ls:title>Never Silence The Wild Heart</ls:title>
+        <loc>https://lunaseeker.com/catalog/wild</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A deaf assassin finds unlikely companionship with a mysterious woman on a strange planet. Survival, secrets, and unexpected bonds unfold.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Never Silence The Wild Heart</zk:title>
-        <loc>https://zacharykai.net/stories/wild</loc>
+        <ls:title>No Good Options</ls:title>
+        <loc>https://lunaseeker.com/catalog/options</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>On a harsh desert planet, a restless teen dreams of the stars. When a mysterious ship arrives, will it bring the escape he craves?</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>No Good Options</zk:title>
-        <loc>https://zacharykai.net/stories/options</loc>
+        <ls:title>One Seed At A Time</ls:title>
+        <loc>https://lunaseeker.com/catalog/seed</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Loyalties clash as a reformed rebel faces an impossible choice. Destroy one last enemy or doom the universe. Seems simple, but there's a devastating catch.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>One Seed At A Time</zk:title>
-        <loc>https://zacharykai.net/stories/seed</loc>
+        <ls:title>Our Undoing</ls:title>
+        <loc>https://lunaseeker.com/catalog/undoing</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Post-apocalyptic hope blooms as a reluctant gardener cultivates survival. A tale of resilience, unlikely friendships, and humanity's rebirth.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Our Undoing</zk:title>
-        <loc>https://zacharykai.net/stories/undoing</loc>
+        <ls:title>Poetry In The Stars</ls:title>
+        <loc>https://lunaseeker.com/catalog/poetry</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>In a city of acid rain and broken dreams, a scarred survivor plots revenge against a criminal syndicate while yearning to escape to paradise.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Poetry In The Stars</zk:title>
-        <loc>https://zacharykai.net/stories/poetry</loc>
+        <ls:title>The Freedom Zenith</ls:title>
+        <loc>https://lunaseeker.com/catalog/zenith</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A space-faring poet journeys through the seven galaxies, racing to capture fleeting moments in verse before her memories fade into the cosmic void.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>The Freedom Zenith</zk:title>
-        <loc>https://zacharykai.net/stories/zenith</loc>
+        <ls:title>Through The Universe Gate</ls:title>
+        <loc>https://lunaseeker.com/catalog/gate</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A ruined battleship is found after a century, and two siblings want to restore her to glory: but ancient weapons and dark secrets lie dormant in her halls.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Through The Universe Gate</zk:title>
-        <loc>https://zacharykai.net/stories/gate</loc>
+        <ls:title>Why Are You Standing There?</ls:title>
+        <loc>https://lunaseeker.com/catalog/why</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A struggling concept artist dreams of distant worlds while supporting seven kids. Will his constant wishing be his salvation or a cosmic trap?</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Why Are You Standing There?</zk:title>
-        <loc>https://zacharykai.net/stories/why</loc>
+        <ls:title>Worshiping The Wired</ls:title>
+        <loc>https://lunaseeker.com/catalog/wired</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>An ex-contractor, free from obligation, discovers they're not alone on a desolate world. But their mysterious savior may doom them both.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>Worshiping The Wired</zk:title>
-        <loc>https://zacharykai.net/stories/wired</loc>
+        <ls:title>You Choose To Pull Through</ls:title>
+        <loc>https://lunaseeker.com/catalog/pull</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A custodian reflects on maintaining Teratechne's gleaming data centers, where artificial minds contemplate in twilight while pilgrims seek enlightenment.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>stories</ls:subcategory>
+    </url>
+
+    <!-- Zines -->
+    
+    <url>
+        <ls:title>Don't Throw Any Of Yourself Away</ls:title>
+        <loc>https://lunaseeker.com/catalog/dtaoya</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
     </url>
     
     <url>
-        <zk:title>You Choose To Pull Through</zk:title>
-        <loc>https://zacharykai.net/stories/pull</loc>
+        <ls:title>Dreaming Of Escapes</ls:title>
+        <loc>https://lunaseeker.com/catalog/de</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A bookshop owner discovers an injured winged woman on their isolated moon: a descendant of long-lost travelers whose arrival changes everything.</zk:content>
-        <zk:category>stories</zk:category>
-        <zk:subcategory>halcyon_galaxy</zk:subcategory>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+
+    <url>
+        <ls:title>Fabled Fantasy</ls:title>
+        <loc>https://lunaseeker.com/catalog/ff</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Gardening Growth</ls:title>
+        <loc>https://lunaseeker.com/catalog/gg</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Indie Musicalities</ls:title>
+        <loc>https://lunaseeker.com/catalog/im</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Letters For The Longhaul</ls:title>
+        <loc>https://lunaseeker.com/catalog/lfl</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Nature Nurture</ls:title>
+        <loc>https://lunaseeker.com/catalog/nn</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Noteworthy Non-Fiction</ls:title>
+        <loc>https://lunaseeker.com/catalog/nwn</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Pushing The Character Limit</ls:title>
+        <loc>https://lunaseeker.com/catalog/ptcl</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Recomended Romantica</ls:title>
+        <loc>https://lunaseeker.com/catalog/rr</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Splendid Scifi</ls:title>
+        <loc>https://lunaseeker.com/catalog/ss</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>The Baking Brain</ls:title>
+        <loc>https://lunaseeker.com/catalog/bb</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Vintage Vignettes</ls:title>
+        <loc>https://lunaseeker.com/catalog/vv</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
+    </url>
+    
+    <url>
+        <ls:title>Yearning For Ya</ls:title>
+        <loc>https://lunaseeker.com/catalog/yy</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>catalog</ls:category>
+        <ls:subcategory>zines</ls:subcategory>
     </url>
 
     <!-- TOOLS -->
 
     <url>
-        <zk:title>Circular Maze Maker</zk:title>
-        <loc>https://zacharykai.net/tools/circlemaze</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Create a circular maze and its solution.</zk:content>
-        <zk:category>tools</zk:category>
+        <ls:title>Tools</ls:title>
+        <loc>https://lunaseeker.com/tools/</loc>
+        <lastmod>2025-05-28</lastmod>
+        <ls:category>tools</ls:category>
     </url>
 
-    <!-- ZINES-->
+    <!-- Puzzles -->
 
     <url>
-        <zk:title>Zines</zk:title>
-        <loc>https://zacharykai.net/zines/</loc>
+        <ls:title>4x4 Sudoku</ls:title>
+        <loc>https://lunaseeker.com/tools/4x4sudoku</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>The zines I've made.</zk:content>
-        <zk:category>zines</zk:category>
-    </url>
-    
-    <url>
-        <zk:title>Don't Throw Any Of Yourself Away</zk:title>
-        <loc>https://zacharykai.net/zines/dtaoya</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Listening to yourself and your creative needs.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Dreaming Of Escapes</zk:title>
-        <loc>https://zacharykai.net/zines/de</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>A small essay on traveling and existing in liminal space.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
 
     <url>
-        <zk:title>Fabled Fantasy</zk:title>
-        <loc>https://zacharykai.net/zines/ff</loc>
+        <ls:title>6x6 Sudoku</ls:title>
+        <loc>https://lunaseeker.com/tools/6x6sudoku</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Selected fantasy book recommendations.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>Gardening Growth</zk:title>
-        <loc>https://zacharykai.net/zines/gg</loc>
+        <ls:title>9x9 Sudoku</ls:title>
+        <loc>https://lunaseeker.com/tools/9x9sudoku</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>How I learned more about myself through gardening.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>Indie Musicalities</zk:title>
-        <loc>https://zacharykai.net/zines/im</loc>
+        <ls:title>Circular Maze</ls:title>
+        <loc>https://lunaseeker.com/tools/circlemaze</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Assorted music track recommendations.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>Letters For The Longhaul</zk:title>
-        <loc>https://zacharykai.net/zines/lfl</loc>
+        <ls:title>Crossword</ls:title>
+        <loc>https://lunaseeker.com/tools/crossword</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Letters for the longhaul as a metaphor for the written word.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>Nature Nurture</zk:title>
-        <loc>https://zacharykai.net/zines/nn</loc>
+        <ls:title>Cryptogram</ls:title>
+        <loc>https://lunaseeker.com/tools/cryptogram</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A miniature essay on how we seemingly separate ourselves from nature.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>Noteworthy Non-Fiction</zk:title>
-        <loc>https://zacharykai.net/zines/nwn</loc>
+        <ls:title>Honeycomb Maze</ls:title>
+        <loc>https://lunaseeker.com/tools/4x4sudoku</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Several non-fiction book recommendations.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>Pushing The Character Limit</zk:title>
-        <loc>https://zacharykai.net/zines/ptcl</loc>
+        <ls:title>Mini Word Search</ls:title>
+        <loc>https://lunaseeker.com/tools/miniwordsearch</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>A fanzine for the eclectic art-rock band The 1975.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>quarter_size_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>Recomended Romantica</zk:title>
-        <loc>https://zacharykai.net/zines/rr</loc>
+        <ls:title>Number Search</ls:title>
+        <loc>https://lunaseeker.com/tools/numbersearch</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Romance novels worth reading.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>Splendid Scifi</zk:title>
-        <loc>https://zacharykai.net/zines/ss</loc>
+        <ls:title>Square Maze</ls:title>
+        <loc>https://lunaseeker.com/tools/squaremaze</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Science fiction books to read.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
     <url>
-        <zk:title>The Baking Brain</zk:title>
-        <loc>https://zacharykai.net/zines/bb</loc>
+        <ls:title>Word Search</ls:title>
+        <loc>https://lunaseeker.com/tools/wordsearch</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>Learning about myself while experimenting with baking.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>puzzles</ls:subcategory>
     </url>
-    
+
+    <!-- Writing -->
+
     <url>
-        <zk:title>Vintage Vignettes</zk:title>
-        <loc>https://zacharykai.net/zines/vv</loc>
+        <ls:title>Repeat Finder</ls:title>
+        <loc>https://lunaseeker.com/tools/repeatfinder</loc>
         <lastmod>2025-04-13</lastmod>
-        <zk:content>How the past is still something we can learn from.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
-    </url>
-    
-    <url>
-        <zk:title>Yearning For Ya</zk:title>
-        <loc>https://zacharykai.net/zines/yy</loc>
-        <lastmod>2025-04-13</lastmod>
-        <zk:content>Young Adult novel recommendations.</zk:content>
-        <zk:category>zines</zk:category>
-        <zk:subcategory>mini_zines</zk:subcategory>
+        <ls:category>tools</ls:category>
+        <ls:subcategory>writing</ls:subcategory>
     </url>
 
 </urlset>

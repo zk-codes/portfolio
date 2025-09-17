@@ -246,6 +246,16 @@ function generate_image($grid, $solution_words = [], $output_mode = 'base64') {
             <nav>
                 <ul>
                     <li><a href="https://lunaseeker.com" class="site-name">Lunaseeker Press</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/catalog/">Catalog</a></li>
+                    <li><a href="/colophon">Colophon</a></li>
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/events/">Events</a></li>
+                    <li><a href="/newsletter/">Newsletter</a></li>
+                    <li><a href="/offerings">Offerings</a></li>
+                    <li><a href="/press">Press</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
+                    <li><a href="/tools/">Tools</a></li>
                 </ul>
             </nav>
 

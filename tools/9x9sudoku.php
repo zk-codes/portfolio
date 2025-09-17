@@ -223,11 +223,10 @@ function renderSudokuImage($grid, $filename, $fontPath) {
 // --- Main Execution ---
 
 // Define file paths.
-// The font path is now relative to the document root for server-wide consistency.
 $fontFile = $_SERVER['DOCUMENT_ROOT'] . '/assets/fonts/ebgaramond.ttf';
-// Image files are saved in the same directory as this script.
-$puzzleImageFile = __DIR__ . '/puzzle.png';
-$solutionImageFile = __DIR__ . '/solution.png';
+$imageDir = $_SERVER['DOCUMENT_ROOT'] . '/tools/output/';
+$puzzleImageFile = $imageDir . 'puzzle.png';
+$solutionImageFile = $imageDir . 'solution.png';
 
 $showSudoku = false;
 $errorMessage = '';
@@ -235,6 +234,20 @@ $expectedTitle = '9x9 Sudoku Maker';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['page_title']) && $_POST['page_title'] === $expectedTitle) {
+
+        // Ensure the output directory exists
+        if (!is_dir($imageDir)) {
+            mkdir($imageDir, 0755, true);
+        }
+
+        // Delete old images before generating new ones
+        if (file_exists($puzzleImageFile)) {
+            unlink($puzzleImageFile);
+        }
+        if (file_exists($solutionImageFile)) {
+            unlink($solutionImageFile);
+        }
+
         // 1. Generate the Sudoku
         $sudoku = new SudokuGenerator();
         $sudoku->generate();
@@ -269,8 +282,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Page Details -->
         <title>9x9 Sudoku Maker | Lunaseeker Press</title>
         <link rel="canonical" href="https://lunaseeker.com/tools/9x9sudoku">
-        <meta name="date" content="2024-07-15">
-        <meta name="last-modified" content="2024-07-15">
+        <meta name="date" content="2025-07-15">
+        <meta name="last-modified" content="2025-09-13">
         <meta name="description" content="Click the button to create a random 9x9 Sudoku and its solution!">
     </head>
 
@@ -282,6 +295,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <nav>
                 <ul>
                     <li><a href="https://lunaseeker.com" class="site-name">Lunaseeker Press</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/catalog/">Catalog</a></li>
+                    <li><a href="/colophon">Colophon</a></li>
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/events/">Events</a></li>
+                    <li><a href="/newsletter/">Newsletter</a></li>
+                    <li><a href="/offerings">Offerings</a></li>
+                    <li><a href="/press">Press</a></li>
+                    <li><a href="/tools/">Tools</a></li>
                 </ul>
             </nav>
 
@@ -290,46 +312,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <!-- Page Header -->
                 <header>
-                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • <a href="https://lunaseeker.com/sitemap#tools">Tools</a></p>
+                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • <a href="/tools/">Tools</a> ↴</p>
                     <h1>9x9 Sudoku Maker</h1>
                     <p class="smalltext">
-                        <strong>Published</strong>: <time class="dt-published" datetime="2024-07-15">15 Jul 2024</time> | 
-                        <strong>Updated</strong>: <time class="dt-modified" datetime="2024-07-15">15 Jul 2024</time>
+                        <strong>Published</strong>: <time class="dt-published" datetime="2025-07-15">15 Jul 2025</time> | 
+                        <strong>Updated</strong>: <time class="dt-modified" datetime="2025-09-13">13 Sep 2025</time>
                     </p>
                 </header>
                 
                 <!-- Page Body -->
-                <p id="top" class="p-summary">Click the button to create a random 9x9 Sudoku and its solution!</p>
-                <section class="e-content">
-                    <form method="post">
-                        <label for="page_title">Enter Page Title:</label>
-                        <br>
-                        <input type="text" id="page_title" name="page_title" required>
-                        <br>
-                        <button type="submit">Generate Sudoku</button>
-                        <?php if ($errorMessage): ?>
-                            <p style="color: red;"><?php echo htmlspecialchars($errorMessage); ?></p>
-                        <?php endif; ?>
-                    </form>
+                <p>Click the button to create a random 9x9 Sudoku and its solution!</p>
 
-                    <?php if ($showSudoku): ?>                
-                        <section>
-                            <h2>Puzzle</h2>
-                            <p>A new 9x9 Sudoku grid. Good luck!</p>
-                            <img src="puzzle.png?t=<?php echo time(); ?>" alt="Sudoku Puzzle">
-                        </section>
-                        <hr>
-                        <details>
-                            <summary><strong>Click here to see the solution...</strong></summary>
-                            <section>
-                                <h2>Solution</h2>
-                                <p>Stuck? Here's the solution to the puzzle above.</p>
-                                <img src="solution.png?t=<?php echo time(); ?>" alt="Sudoku Solution">
-                            </section>
-                        </details>
+                <!-- Creating A Sudoku -->
+                <form method="post">
+                    <label for="page_title">Enter Page Title:</label>
+                    <br>
+                    <input type="text" id="page_title" name="page_title" required>
+                    <br>
+                    <button type="submit">Generate Sudoku</button>
+                    <?php if ($errorMessage): ?>
+                        <p style="color: red;"><?php echo htmlspecialchars($errorMessage); ?></p>
                     <?php endif; ?>
+                </form>
 
-                </section>
+                <!-- Displaying The Created Sudoku -->
+                <?php if ($showSudoku): ?>     
+                    <!-- Puzzle -->           
+                    <section>
+                        <h2>Puzzle</h2>
+                        <p>A new 9x9 Sudoku grid. Good luck!</p>
+                        <img src="/tools/output/puzzle.png?t=<?php echo time(); ?>" alt="Sudoku Puzzle">
+                    </section>
+                    <hr>
+                    <!-- Solution -->
+                    <details>
+                        <summary><strong>Click here to see the solution...</strong></summary>
+                        <section>
+                            <h2>Solution</h2>
+                            <p>Stuck? Here's the solution to the puzzle above.</p>
+                            <img src="/tools/output/solution.png?t=<?php echo time(); ?>" alt="Sudoku Solution">
+                        </section>
+                    </details>
+                <?php endif; ?>
                 
                 <p>•--♡--•</p>
                 
