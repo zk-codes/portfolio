@@ -264,17 +264,18 @@ function generate_image($grid, $solution_words = [], $output_mode = 'base64') {
 
                 <!-- Page Header -->
                 <header>
-                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> ➸ <a href="https://lunaseeker.com/tools/wordsearch">Word Search Maker</a></p>
+                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> ➸ <a href="/tools/">Tools</a> ↴</p>
                     <h1>Word Search Maker</h1>
                     <p class="smalltext">
                         <strong>Published</strong>: <time class="dt-published" datetime="2025-07-13">13 Jul 2025</time> |
-                        <strong>Updated</strong>: <time class="dt-modified" datetime="2025-07-13">13 Jul 2025</time>
+                        <strong>Updated</strong>: <time class="dt-modified" datetime="2025-09-21">21 Sep 2025</time>
                     </p>
                 </header>
 
                 <!-- Page Body -->
-                <p id="top" class="p-summary">Input a list of words and click the button to create a word search and its solution!</p>
+                <p>Input a word list to create a word search and its solution!</p>
 
+                <!-- Create A Word Searc -->
                 <section>
                     <h2>Create Your Word Search</h2>
                     <form action="/tools/wordsearch" method="post" class="word-search-form">
@@ -285,6 +286,7 @@ function generate_image($grid, $solution_words = [], $output_mode = 'base64') {
                     </form>
                 </section>
 
+                <!-- Word Search Results -->
                 <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
 
                     <?php if (!empty($generated_content)): ?>
