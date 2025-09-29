@@ -1,4 +1,5 @@
 <?php
+
 // --- Maze Generation & Drawing Functions ---
 
 /**
@@ -7,6 +8,7 @@
  * @param int $height The number of cells vertically.
  * @return array The grid representing the maze.
  */
+
 function generateMazeData(int $width, int $height): array {
     $maze = array_fill(0, $height, array_fill(0, $width, []));
     $stack = [];
@@ -96,9 +98,10 @@ function solveMaze(array &$maze, int $startX, int $startY, int $endX, int $endY)
  * @param int $endY End Y cell.
  * @return string The Base64 encoded PNG image data.
  */
+
 function drawMazeImage(array $maze, ?array $solutionPath, int $startX, int $startY, int $endX, int $endY): string {
     $imgSize = 1500;
-    $padding = 50;
+    $padding = 30;
     $lineThickness = 4;
 
     $rows = count($maze);
@@ -143,7 +146,7 @@ function drawMazeImage(array $maze, ?array $solutionPath, int $startX, int $star
     if ($solutionPath) {
         $dashStyle = [$solutionColor, $solutionColor, $solutionColor, $solutionColor, IMG_COLOR_TRANSPARENT, IMG_COLOR_TRANSPARENT, IMG_COLOR_TRANSPARENT, IMG_COLOR_TRANSPARENT];
         imagesetstyle($image, $dashStyle);
-        imagesetthickness($image, $lineThickness + 1); // Make solution line slightly thicker
+        imagesetthickness($image, $lineThickness + 1.25);
 
         for ($i = 0; $i < count($solutionPath) - 1; $i++) {
             [$c1, $r1] = $solutionPath[$i];
@@ -164,10 +167,10 @@ function drawMazeImage(array $maze, ?array $solutionPath, int $startX, int $star
     imagefilledpolygon($image, $entry_arrow_points, 3, $arrowColor);
     
     // Draw Exit Arrow
-    $exit_ax = $xOffset + $endX * $cellSize + $cellSize / 2; // <-- Use endX
+    $exit_ax = $xOffset + $endX * $cellSize + $cellSize / 2;
     $exit_ay = $yOffset + $height + $padding / 2;
     // For a downward arrow, the tip's y-value is the largest
-    $exit_arrow_points = [$exit_ax, $exit_ay, $exit_ax - $arrowSize, $exit_ay - $arrowSize, $exit_ax + $arrowSize, $exit_ay - $arrowSize]; // <-- Corrected point calculation
+    $exit_arrow_points = [$exit_ax, $exit_ay, $exit_ax - $arrowSize, $exit_ay - $arrowSize, $exit_ax + $arrowSize, $exit_ay - $arrowSize];
     imagefilledpolygon($image, $exit_arrow_points, 3, $arrowColor);
     
     // Capture image data to a variable
@@ -186,12 +189,12 @@ $solution_image_data = null;
 
 $showSudoku = false;
 $errorMessage = '';
-$expectedTitle = 'Square Maze Maker';
+$captcha = 'Square Maze Maker';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['page_title']) && $_POST['page_title'] === $expectedTitle) {
-    $grid_cols = 30;
-    $grid_rows = 30;
+    if (isset($_POST['captcha']) && $_POST['captcha'] === $captcha) {
+    $grid_cols = 40;
+    $grid_rows = 40;
     
     // Define start and end points
     $startX = rand(1, $grid_cols - 2);
@@ -232,7 +235,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <title>Square Maze Maker | Lunaseeker Press</title>
         <link rel="canonical" href="https://lunaseeker.com/tools/squaremaze">
         <meta name="date" content="2025-07-15">
-        <meta name="last-modified" content="2025-07-15">
+        <meta name="last-modified" content="2025-09-29">
         <meta name="description" content="A simple tool to generate a random square maze and its solution.">
     </head>
 
@@ -262,11 +265,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <!-- Page Header -->
                 <header>
-                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a></p>
+                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • <a href="/tools/">Tools</a> ↴</p>
                     <h1>Square Maze Maker</h1>
                     <p class="smalltext">
                         <strong>Published</strong>: <time class="dt-published" datetime="2025-07-15">15 Jul 2025</time> | 
-                        <strong>Updated</strong>: <time class="dt-modified" datetime="2025-07-15">15 Jul 2025</time>
+                        <strong>Updated</strong>: <time class="dt-modified" datetime="2025-09-29">29 Sep 2025</time>
                     </p>
                 </header>
                 
@@ -277,9 +280,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <section class="maze-form">
                     <form action="/tools/squaremaze" method="post">
-                        <label for="page_title">Enter Page Title:</label>
+                        <label for="captcha">Type in this page's title: what the H1 at the top says...</label>
                         <br>
-                        <input type="text" id="page_title" name="page_title" size="50" required>
+                        <input type="text" id="captcha" name="captcha" required>
                         <br>
                         <button type="submit">Generate New Maze</button>
                     </form>
