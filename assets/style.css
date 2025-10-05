@@ -254,11 +254,13 @@ form {
 
 form, label, input, button, select, option {
     font-family: 'Vollkorn', 'Palantino Linotype', serif;
+    width: 100%;
     margin-bottom: 0.25em;
 }
 
 input, button, select, option {
     font-size: 1em;
+    width: 100%;
     padding: 0.35em;
 }
 
