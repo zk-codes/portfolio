@@ -1,5 +1,5 @@
 <?php
-// === PHP LOGIC FOR CRYPTOGRAM GENERATION (v6.2 - Key Spacing) ===
+// === PHP LOGIC FOR CRYPTOGRAM GENERATION ===
 
 $puzzleImagePath = null;
 $solutionImagePath = null;
@@ -201,11 +201,19 @@ function drawKey($image, $isSolution, $config) {
 
     function drawCryptogramImage($filePath, $isSolution, $config) {
         extract($config);
+        // Create a true color image for full alpha channel support
         $image = imagecreatetruecolor($imageWidth, $imageHeight);
-        $white = imagecolorallocate($image, 255, 255, 255);
-        $black = imagecolorallocate($image, 0, 0, 0);
+        
+        // Disable alpha blending and enable saving of alpha channel
+        imagealphablending($image, false);
+        imagesavealpha($image, true);
 
-        imagefill($image, 0, 0, $white);
+        $black = imagecolorallocate($image, 0, 0, 0);
+        // Allocate a fully transparent color
+        $transparent = imagecolorallocatealpha($image, 0, 0, 0, 127);
+        // Fill the image with the transparent color
+        imagefill($image, 0, 0, $transparent);
+
         $keyHeight = drawKey($image, $isSolution, $config);
 
         $puzzleBlockHeight = count($layoutLines) * $lineHeight;
