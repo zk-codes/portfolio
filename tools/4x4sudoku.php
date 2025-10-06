@@ -241,12 +241,16 @@ function renderSudokuImage($grid, $filename, $fontPath) {
 
     $image = imagecreatetruecolor($imageSize, $imageSize);
 
+    // --- Enable transparency ---
+    imagealphablending($image, false);
+    imagesavealpha($image, true);
+
     // --- Colors ---
-    $white = imagecolorallocate($image, 255, 255, 255);
+    $transparent = imagecolorallocatealpha($image, 0, 0, 0, 127); // Fully transparent
     $black = imagecolorallocate($image, 0, 0, 0);
     $lightGray = imagecolorallocate($image, 204, 204, 204); // Not explicitly used but good to keep for consistency
 
-    imagefill($image, 0, 0, $white);
+    imagefill($image, 0, 0, $transparent); // Fill with transparent background
 
     // --- Draw Grid Lines ---
     $thinLineThickness = 1;
@@ -312,12 +316,10 @@ function renderSudokuImage($grid, $filename, $fontPath) {
 
 // --- Main Execution ---
 
-// Define file paths.
-// The font path is now relative to the document root for server-wide consistency.
+// File Paths
 $fontFile = $_SERVER['DOCUMENT_ROOT'] . '/assets/fonts/ebgaramond.ttf';
-// Image files are saved in the same directory as this script.
-$puzzleImageFile = __DIR__ . '/puzzle.png';
-$solutionImageFile = __DIR__ . '/solution.png';
+$puzzleImageFile = $_SERVER['DOCUMENT_ROOT'] . '/tools/output/4x4puzzle.png';
+$solutionImageFile = $_SERVER['DOCUMENT_ROOT'] . '/tools/output/4x4solution.png';
 
 $showSudoku = false;
 $errorMessage = '';
@@ -400,11 +402,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 <!-- Page Body -->
                 <p id="top" class="p-summary">Here's a Sudoku puzzle generator. To generate a new puzzle, enter the exact page title in the field below and click 'Generate'.</p>
+
                 <section class="e-content">
                     <form method="post">
-                        <label for="page_title">Enter Page Title:</label>
+                        <label for="page_title">Type in this page's title: what the H1 at the top says...</label>
                         <br>
-                        <input type="text" id="page_title" name="page_title" size="50" required>
+                        <input type="text" id="page_title" name="page_title" required>
                         <br>
                         <button type="submit">Generate Sudoku</button>
                         <?php if ($errorMessage): ?>
@@ -416,14 +419,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <section>
                             <h2>Puzzle</h2>
                             <p>A new 4x4 Sudoku grid. Good luck!</p>
-                            <img src="puzzle.png?t=<?php echo time(); ?>" alt="4x4 Sudoku Puzzle">
+                            <img src="/tools/output/4x4puzzle.png" alt="4x4 Sudoku Puzzle">
                         </section>            
                         <section>
                             <details>
                                 <summary><strong>Click here to reveal the solution.</strong></summary>
                                 <h2>Solution</h2>
                                 <p>Stuck? Here's the solution to the puzzle above.</p>
-                                <img src="solution.png?t=<?php echo time(); ?>" alt="4x4 Sudoku Solution">
+                                <img src="/tools/output/4x4solution.png" alt="4x4 Sudoku Solution">
                             </details>
                         </section>
                         <?php else: ?>

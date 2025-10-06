@@ -27,8 +27,8 @@ function generateMazeData(int $width, int $height): array {
         $directions = ['N' => [0, -1], 'S' => [0, 1], 'W' => [-1, 0], 'E' => [1, 0]];
         $neighbors = [];
         foreach ($directions as $dir => $move) {
-            $nx = $cx + $move[0];
-            $ny = $cy + $move[1];
+            $nx = (int)($cx + $move[0]);
+            $ny = (int)($cy + $move[1]);
             if ($dir === 'W' && $cx === 0) $nx = $width - 1;
             if ($dir === 'E' && $cx === $width - 1) $nx = 0;
             if ($nx >= 0 && $nx < $width && $ny >= 0 && $ny < $height && !$visited[$ny][$nx]) {
@@ -70,7 +70,7 @@ function addLoops(array &$maze, int $complexity = 15): void {
         }
         $randomFloat = mt_rand() / mt_getrandmax();
         $biasedFloat = pow($randomFloat, 3.0); // Increased bias to 3.0
-        $r = floor(1 + $biasedFloat * ($height - 3));
+        $r = (int)floor(1 + $biasedFloat * ($height - 3));
         $c = rand(0, $width - 1);
         $possibleDirs = [];
         $allDirs = ['N', 'S', 'W', 'E'];
@@ -116,8 +116,8 @@ function findLongestPathEndpoint(array &$maze, int $startX, int $startY): array 
         foreach ($maze[$y][$x] as $dir => $isOpen) {
             if ($isOpen) {
                 $move = ['N' => [0, -1], 'S' => [0, 1], 'W' => [-1, 0], 'E' => [1, 0]][$dir];
-                $nx = $x + $move[0];
-                $ny = $y + $move[1];
+                $nx = (int)($x + $move[0]);
+                $ny = (int)($y + $move[1]);
                 if ($dir === 'W' && $x === 0) $nx = $width - 1;
                 if ($dir === 'E' && $x === $width - 1) $nx = 0;
                 if (isset($distances[$ny][$nx]) && $distances[$ny][$nx] === -1) {
@@ -158,8 +158,8 @@ function solveMaze(array &$maze, int $startX, int $startY, int $endX, int $endY)
         foreach ($maze[$y][$x] as $dir => $isOpen) {
             if ($isOpen) {
                 $move = ['N' => [0, -1], 'S' => [0, 1], 'W' => [-1, 0], 'E' => [1, 0]][$dir];
-                $nx = $x + $move[0];
-                $ny = $y + $move[1];
+                $nx = (int)($x + $move[0]);
+                $ny = (int)($y + $move[1]);
                 if ($dir === 'W' && $x === 0) $nx = $width - 1;
                 if ($dir === 'E' && $x === $width - 1) $nx = 0;
                 if (isset($visited[$ny][$nx]) && !$visited[$ny][$nx]) {
@@ -184,19 +184,22 @@ function drawCircularMazeImage(array $maze, ?array $solutionPath, int $startX, i
     $lineThickness = 2;
     $rings = count($maze);
     $sectors = count($maze[0]);
-    $centerX = $imgSize / 2;
-    $centerY = $imgSize / 2;
-    $outerRadius = $imgSize / 2 - $padding;
+    $centerX = (int)($imgSize / 2);
+    $centerY = (int)($imgSize / 2);
+    $outerRadius = (int)($imgSize / 2 - $padding);
     $sectorAngle = 360 / $sectors;
     $image = imagecreatetruecolor($imgSize, $imgSize);
     imageantialias($image, true);
-    $bgColor = imagecolorallocatealpha($image, 255, 255, 255, 0);
+    $bgColor = imagecolorallocatealpha($image, 255, 255, 255, 127); // Alpha value 127 for full transparency
     $wallColor = imagecolorallocate($image, 18, 18, 18);
     $solutionColor = imagecolorallocate($image, 220, 38, 127);
     $arrowColor = imagecolorallocate($image, 18, 18, 18);
     $startColor = imagecolorallocate($image, 18, 18, 18);
-    imagefill($image, 0, 0, $bgColor);
+
+    // Ensure transparency is saved and then fill with the transparent background color
     imagesavealpha($image, true);
+    imagefill($image, 0, 0, $bgColor);
+    
     imagesetthickness($image, $lineThickness);
     $innerRadius = $outerRadius * 0.1; // Smaller hole for more maze
     $totalRadialDistance = $outerRadius - $innerRadius;
@@ -217,7 +220,7 @@ function drawCircularMazeImage(array $maze, ?array $solutionPath, int $startX, i
             if (!isset($maze[$r][$c]['W'])) {
                 $rad_in = $radii[$r];
                 $rad_out = $radii[$r + 1];
-                imageline($image, $centerX + $rad_in * cos(deg2rad($angle_start)), $centerY + $rad_in * sin(deg2rad($angle_start)), $centerX + $rad_out * cos(deg2rad($angle_start)), $centerY + $rad_out * sin(deg2rad($angle_start)), $wallColor);
+                imageline($image, (int)($centerX + $rad_in * cos(deg2rad($angle_start))), (int)($centerY + $rad_in * sin(deg2rad($angle_start))), (int)($centerX + $rad_out * cos(deg2rad($angle_start))), (int)($centerY + $rad_out * sin(deg2rad($angle_start))), $wallColor);
             }
             
             // Draw the Southern circular wall if there's no path South.
@@ -226,13 +229,13 @@ function drawCircularMazeImage(array $maze, ?array $solutionPath, int $startX, i
                 // Also, don't draw the wall segment if it's the exit point.
                 if (!($r === $rings - 1 && $isExitPoint)) {
                     $rad_out = $radii[$r + 1];
-                    imagearc($image, $centerX, $centerY, $rad_out * 2, $rad_out * 2, $angle_start, $angle_end, $wallColor);
+                    imagearc($image, $centerX, $centerY, (int)($rad_out * 2), (int)($rad_out * 2), (int)$angle_start, (int)$angle_end, $wallColor);
                 }
             }
         }
     }
     // Draw the solid innermost boundary wall.
-    imagearc($image, $centerX, $centerY, $radii[0] * 2, $radii[0] * 2, 0, 360, $wallColor);
+    imagearc($image, $centerX, $centerY, (int)($radii[0] * 2), (int)($radii[0] * 2), 0, 360, $wallColor);
 
     // Draw solution path (if provided)
     if ($solutionPath) {
@@ -247,20 +250,20 @@ function drawCircularMazeImage(array $maze, ?array $solutionPath, int $startX, i
                 $angle2_deg = ($c2 + 0.5) * $sectorAngle;
                 if (abs($c1 - $c2) > 1) {
                     if ($c1 > $c2) {
-                        imagearc($image, $centerX, $centerY, $path_diameter, $path_diameter, $angle1_deg, 360, $solutionColor);
-                        imagearc($image, $centerX, $centerY, $path_diameter, $path_diameter, 0, $angle2_deg, $solutionColor);
+                        imagearc($image, $centerX, $centerY, (int)$path_diameter, (int)$path_diameter, (int)$angle1_deg, 360, $solutionColor);
+                        imagearc($image, $centerX, $centerY, (int)$path_diameter, (int)$path_diameter, 0, (int)$angle2_deg, $solutionColor);
                     } else {
-                        imagearc($image, $centerX, $centerY, $path_diameter, $path_diameter, $angle2_deg, 360, $solutionColor);
-                        imagearc($image, $centerX, $centerY, $path_diameter, $path_diameter, 0, $angle1_deg, $solutionColor);
+                        imagearc($image, $centerX, $centerY, (int)$path_diameter, (int)$path_diameter, (int)$angle2_deg, 360, $solutionColor);
+                        imagearc($image, $centerX, $centerY, (int)$path_diameter, (int)$path_diameter, 0, (int)$angle1_deg, $solutionColor);
                     }
                 } else {
-                    imagearc($image, $centerX, $centerY, $path_diameter, $path_diameter, min($angle1_deg, $angle2_deg), max($angle1_deg, $angle2_deg), $solutionColor);
+                    imagearc($image, $centerX, $centerY, (int)$path_diameter, (int)$path_diameter, (int)min($angle1_deg, $angle2_deg), (int)max($angle1_deg, $angle2_deg), $solutionColor);
                 }
             } else {
                 $path_angle = deg2rad(($c1 + 0.5) * $sectorAngle);
                 $path_rad1 = ($radii[min($r1, $r2)] + $radii[min($r1, $r2) + 1]) / 2;
                 $path_rad2 = ($radii[max($r1, $r2)] + $radii[max($r1, $r2) + 1]) / 2;
-                imageline($image, $centerX + $path_rad1 * cos($path_angle), $centerY + $path_rad1 * sin($path_angle), $centerX + $path_rad2 * cos($path_angle), $centerY + $path_rad2 * sin($path_angle), $solutionColor);
+                imageline($image, (int)($centerX + $path_rad1 * cos($path_angle)), (int)($centerY + $path_rad1 * sin($path_angle)), (int)($centerX + $path_rad2 * cos($path_angle)), (int)($centerY + $path_rad2 * sin($path_angle)), $solutionColor);
             }
         }
     }
@@ -268,22 +271,22 @@ function drawCircularMazeImage(array $maze, ?array $solutionPath, int $startX, i
     // Draw Start Marker at the Center
     $start_angle_rad = deg2rad(($startX + 0.5) * $sectorAngle);
     $start_radius = ($radii[0] + $radii[1]) / 2;
-    $marker_cx = $centerX + $start_radius * cos($start_angle_rad);
-    $marker_cy = $centerY + $start_radius * sin($start_angle_rad);
-    $marker_size = ($radii[1] - $radii[0]) * 0.6;
+    $marker_cx = (int)($centerX + $start_radius * cos($start_angle_rad));
+    $marker_cy = (int)($centerY + $start_radius * sin($start_angle_rad));
+    $marker_size = (int)(($radii[1] - $radii[0]) * 0.6);
     imagefilledellipse($image, $marker_cx, $marker_cy, $marker_size, $marker_size, $startColor);
 
     // Draw Exit Arrow
     $arrowSideLength = 25;
     $angle_exit = deg2rad(($endX + 0.5) * $sectorAngle);
     $r_tip_exit = $outerRadius + 10;
-    $p1x_exit = $centerX + $r_tip_exit * cos($angle_exit);
-    $p1y_exit = $centerY + $r_tip_exit * sin($angle_exit);
-    $p2x_exit = $p1x_exit - $arrowSideLength * cos($angle_exit + deg2rad(30));
-    $p2y_exit = $p1y_exit - $arrowSideLength * sin($angle_exit + deg2rad(30));
-    $p3x_exit = $p1x_exit - $arrowSideLength * cos($angle_exit - deg2rad(30));
-    $p3y_exit = $p1y_exit - $arrowSideLength * sin($angle_exit - deg2rad(30));
-    imagefilledpolygon($image, [$p1x_exit, $p1y_exit, $p2x_exit, $p2y_exit, $p3x_exit, $p3y_exit], 3, $arrowColor);
+    $p1x_exit = (int)($centerX + $r_tip_exit * cos($angle_exit));
+    $p1y_exit = (int)($centerY + $r_tip_exit * sin($angle_exit));
+    $p2x_exit = (int)($p1x_exit - $arrowSideLength * cos($angle_exit + deg2rad(30)));
+    $p2y_exit = (int)($p1y_exit - $arrowSideLength * sin($angle_exit + deg2rad(30)));
+    $p3x_exit = (int)($p1x_exit - $arrowSideLength * cos($angle_exit - deg2rad(30)));
+    $p3y_exit = (int)($p1y_exit - $arrowSideLength * sin($angle_exit - deg2rad(30)));
+    imagefilledpolygon($image, [$p1x_exit, $p1y_exit, $p2x_exit, $p2y_exit, $p3x_exit, $p3y_exit], $arrowColor);
 
     ob_start();
     imagepng($image);

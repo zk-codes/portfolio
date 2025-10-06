@@ -247,7 +247,7 @@ p:hover  {
 form {
     border-top: 2px double var(--text);
     border-bottom: 2px double var(--text);
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -262,6 +262,10 @@ input, button, select, option {
     font-size: 1em;
     width: 100%;
     padding: 0.35em;
+}
+
+label {
+    margin-bottom: 0.25em;
 }
 
 select, option, button {

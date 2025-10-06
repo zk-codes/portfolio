@@ -153,11 +153,14 @@ function renderSudokuImage($grid, $filename, $fontPath) {
     $image = imagecreatetruecolor($imageSize, $imageSize);
 
     // --- Colors ---
-    $white = imagecolorallocate($image, 255, 255, 255);
     $black = imagecolorallocate($image, 0, 0, 0);
     $lightGray = imagecolorallocate($image, 204, 204, 204);
 
-    imagefill($image, 0, 0, $white);
+    // Set transparency
+    imagealphablending($image, false); // Do not blend colors
+    $transparent = imagecolorallocatealpha($image, 0, 0, 0, 127); // Allocate a fully transparent color
+    imagefill($image, 0, 0, $transparent); // Fill the background with the transparent color
+    imagesavealpha($image, true); // Save alpha channel
 
     // --- Draw Grid Lines ---
     $thinLineThickness = 1;
@@ -224,9 +227,8 @@ function renderSudokuImage($grid, $filename, $fontPath) {
 
 // Define file paths.
 $fontFile = $_SERVER['DOCUMENT_ROOT'] . '/assets/fonts/ebgaramond.ttf';
-$imageDir = $_SERVER['DOCUMENT_ROOT'] . '/tools/output/';
-$puzzleImageFile = $imageDir . 'puzzle.png';
-$solutionImageFile = $imageDir . 'solution.png';
+$puzzleImageFile = $_SERVER['DOCUMENT_ROOT'] . '/tools/output/9x9puzzle.png';
+$solutionImageFile = $_SERVER['DOCUMENT_ROOT'] . '/tools/output/9x9solution.png';
 
 $showSudoku = false;
 $errorMessage = '';
@@ -234,11 +236,6 @@ $expectedTitle = '9x9 Sudoku Maker';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['page_title']) && $_POST['page_title'] === $expectedTitle) {
-
-        // Ensure the output directory exists
-        if (!is_dir($imageDir)) {
-            mkdir($imageDir, 0755, true);
-        }
 
         // Delete old images before generating new ones
         if (file_exists($puzzleImageFile)) {
@@ -260,6 +257,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         renderSudokuImage($puzzleGrid, $puzzleImageFile, $fontFile);
         renderSudokuImage($solutionGrid, $solutionImageFile, $fontFile);
         $showSudoku = true;
+
     } else {
         $errorMessage = "Please enter the correct page title to generate the Sudoku.";
     }
@@ -325,7 +323,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <!-- Creating A Sudoku -->
                 <form method="post">
-                    <label for="page_title">Enter Page Title:</label>
+                    <label for="page_title">Type in this page's title: what the H1 at the top says...</label>
                     <br>
                     <input type="text" id="page_title" name="page_title" required>
                     <br>
@@ -341,7 +339,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <section>
                         <h2>Puzzle</h2>
                         <p>A new 9x9 Sudoku grid. Good luck!</p>
-                        <img src="/tools/output/puzzle.png?t=<?php echo time(); ?>" alt="Sudoku Puzzle">
+                        <img src="/tools/output/9x9puzzle.png" alt="9x9 Sudoku Puzzle">
                     </section>
                     <hr>
                     <!-- Solution -->
@@ -350,7 +348,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <section>
                             <h2>Solution</h2>
                             <p>Stuck? Here's the solution to the puzzle above.</p>
-                            <img src="/tools/output/solution.png?t=<?php echo time(); ?>" alt="Sudoku Solution">
+                            <img src="/tools/output/9x9solution.png" alt="9x9 Sudoku Solution">
                         </section>
                     </details>
                 <?php endif; ?>
