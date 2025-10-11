@@ -333,13 +333,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <?php endif; ?>
                 </form>
 
-                <!-- Displaying The Created Sudoku -->
-                <?php if ($showSudoku): ?>     
+                <!-- Displaying Created Sudoku -->
+                <?php if ($showSudoku): ?>
+                    <?php $timestamp = time(); ?>
                     <!-- Puzzle -->           
                     <section>
                         <h2>Puzzle</h2>
                         <p>A new 9x9 Sudoku grid. Good luck!</p>
-                        <img src="/tools/output/9x9puzzle.png" alt="9x9 Sudoku Puzzle">
+                        <img src="/tools/output/9x9puzzle.png?v=<?php echo $timestamp; ?>" alt="9x9 Sudoku Puzzle">
                     </section>
                     <hr>
                     <!-- Solution -->
@@ -348,11 +349,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <section>
                             <h2>Solution</h2>
                             <p>Stuck? Here's the solution to the puzzle above.</p>
-                            <img src="/tools/output/9x9solution.png" alt="9x9 Sudoku Solution">
+                            <img src="/tools/output/9x9solution.png?v=<?php echo $timestamp; ?>" alt="9x9 Sudoku Solution">
                         </section>
                     </details>
                 <?php endif; ?>
-                
+
                 <p>•--♡--•</p>
                 
                 <!-- Footer -->

@@ -422,20 +422,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <section>
                             <h2>Puzzle</h2>
                             <p>A new 6x6 Sudoku grid. Good luck!</p>
-                            <img src="/tools/output/6x6puzzle.png" alt="6x6 Sudoku Puzzle">
+                            <img src="/tools/output/6x6puzzle.png?v=<?php echo filemtime(__DIR__ . '/tools/output/6x6puzzle.png'); ?>" alt="6x6 Sudoku Puzzle">
                         </section>            
                         <section>
                             <details>
                                 <summary><strong>Click here to reveal the solution.</strong></summary>
                                 <h2>Solution</h2>
                                 <p>Stuck? Here's the solution to the puzzle above.</p>
-                                <img src="/tools/output/6x6solution.png" alt="6x6 Sudoku Solution">
+                                <img src="/tools/output/6x6solution.png?v=<?php echo filemtime(__DIR__ . '/tools/output/6x6solution.png'); ?>" alt="6x6 Sudoku Solution">
                             </details>
                         </section>
                         <?php else: ?>
                             <p>Sudoku will appear here after successful generation.</p>
                     <?php endif; ?>
+
                 </section>
+
                 <p>•--♡--•</p>
                 
                 <!-- Footer -->
