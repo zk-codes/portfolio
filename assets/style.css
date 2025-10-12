@@ -170,19 +170,6 @@ p {
 
 /* -- Lists */
 
-li::before:not(nav li) {
-    content: '🍃';
-    color: var(--fern);
-    font-size: 0.9em;
-    position: absolute;
-    left: 0;
-    top: 0.15em;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    z-index: 1;
-}
-
 ul, ol {
     margin: 1.5em 0;
     padding-left: 2em;
@@ -194,10 +181,8 @@ nav li {
 }
 
 li {
-    list-style-type: none;
     margin-bottom: 0.8em;
     line-height: 1.6;
-    position: relative;
     padding-left: 1.5em;
 }
 
