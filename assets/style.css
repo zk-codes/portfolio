@@ -106,7 +106,6 @@ body {
     margin: auto;
 }
 
-
 /* ---------- Typography */
 
 /* -- Headings */
@@ -154,7 +153,7 @@ h4 {
 
 /* -- Paragraphs */
 
-p {
+p, details {
     margin-bottom: 1.5em;
     hanging-punctuation: first last;
 }
