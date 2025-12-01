@@ -383,6 +383,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • <a href="/sitemap#tools">Tools</a></p>
                     <h1>Circular Maze Maker</h1>
                     <p class="smalltext">
+                        <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
                         <strong>Published</strong>: <time class="dt-published" datetime="2025-07-09">09 Jul 2025</time> | 
                         <strong>Updated</strong>: <time class="dt-modified" datetime="2025-07-09">09 Jul 2025</time>
                     </p>

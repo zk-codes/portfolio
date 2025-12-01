@@ -267,6 +267,7 @@ function generate_image($grid, $solution_words = [], $output_mode = 'base64') {
                     <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> ➸ <a href="/tools/">Tools</a> ↴</p>
                     <h1>Word Search Maker</h1>
                     <p class="smalltext">
+                        <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
                         <strong>Published</strong>: <time class="dt-published" datetime="2025-07-13">13 Jul 2025</time> |
                         <strong>Updated</strong>: <time class="dt-modified" datetime="2025-09-21">21 Sep 2025</time>
                     </p>

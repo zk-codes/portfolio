@@ -347,6 +347,7 @@ function drawKey($image, $isSolution, $config) {
                     <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • Tools ↴</p>
                     <h1>Cryptogram Maker</h1>
                     <p class="smalltext">
+                        <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
                         <strong>Published</strong>: <time class="dt-published" datetime="2025-07-15">15 Jul 2025</time> | 
                         <strong>Updated</strong>: <time class="dt-modified" datetime="2025-09-05">5 Sep 2025</time>
                     </p>

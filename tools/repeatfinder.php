@@ -48,6 +48,7 @@
                     <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • <a href="https://lunaseeker.com/sitemap#tools">Tools</a></p>
                     <h1>Repeats Finder</h1>
                     <p class="smalltext">
+                        <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
                         <strong>Published</strong>: <time class="dt-published" datetime="2025-00-00">00 XXX 2025</time> | 
                         <strong>Updated</strong>: <time class="dt-modified" datetime="2025-00-00">00 XXX 2025</time>
                     </p>
