@@ -283,6 +283,7 @@ function generate_image($grid, $solution_words = [], $output_mode = 'base64') {
                     <li><a href="/colophon">Colophon</a></li>
                     <li><a href="/cv">CV</a></li>
                     <li><a href="/press">Press</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
                 </ul>
             </nav>
 

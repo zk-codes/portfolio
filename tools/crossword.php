@@ -528,6 +528,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['create_puzzle'])) {
                     <li><a href="/colophon">Colophon</a></li>
                     <li><a href="/cv">CV</a></li>
                     <li><a href="/press">Press</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
                 </ul>
             </nav>
 

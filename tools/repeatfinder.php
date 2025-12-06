@@ -46,6 +46,7 @@
                     <li><a href="/colophon">Colophon</a></li>
                     <li><a href="/cv">CV</a></li>
                     <li><a href="/press">Press</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
                 </ul>
             </nav>
 
