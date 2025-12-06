@@ -291,17 +291,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <!-- Header + Sidebar Navigation -->
             <nav>
+                <!-- Home -->
                 <ul>
-                    <li><a href="https://lunaseeker.com" class="site-name">Lunaseeker Press</a></li>
+                    <li><a href="https://lunaseeker.com" class="site-name">Lunaseeker Press</a>
+                </ul>
+                <!-- Collections -->
+                <p>Collections</p>
+                <ul>
+                    <li><a href="/events/">Events</a></li>
+                    <li><a href="/newsletter/">Newsletter</a></li>
+                    <li><a href="/press">Press</a></li>
+                    <li><a href="/tools/">Tools</a></li><li>
+                </ul>
+                <!-- Pages -->
+                <p>Pages</p>
+                <ul>
                     <li><a href="/about">About</a></li>
                     <li><a href="/catalog/">Catalog</a></li>
                     <li><a href="/colophon">Colophon</a></li>
                     <li><a href="/cv">CV</a></li>
-                    <li><a href="/events/">Events</a></li>
-                    <li><a href="/newsletter/">Newsletter</a></li>
-                    <li><a href="/offerings">Offerings</a></li>
                     <li><a href="/press">Press</a></li>
-                    <li><a href="/tools/">Tools</a></li>
                 </ul>
             </nav>
 
