@@ -514,8 +514,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['create_puzzle'])) {
                 <!-- Collections -->
                 <p>Collections</p>
                 <ul>
+                    <li><a href="/catalog/">Catalog</a></li>
                     <li><a href="/events/">Events</a></li>
                     <li><a href="/newsletter/">Newsletter</a></li>
+                    <li><a href="/notes/">Notes</a></li>
                     <li><a href="/press">Press</a></li>
                     <li><a href="/tools/">Tools</a></li><li>
                 </ul>
@@ -523,7 +525,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['create_puzzle'])) {
                 <p>Pages</p>
                 <ul>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/catalog/">Catalog</a></li>
                     <li><a href="/colophon">Colophon</a></li>
                     <li><a href="/cv">CV</a></li>
                     <li><a href="/press">Press</a></li>

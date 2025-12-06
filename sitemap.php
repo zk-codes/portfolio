@@ -193,8 +193,10 @@ unset($category);
                 <!-- Collections -->
                 <p>Collections</p>
                 <ul>
+                    <li><a href="/catalog/">Catalog</a></li>
                     <li><a href="/events/">Events</a></li>
                     <li><a href="/newsletter/">Newsletter</a></li>
+                    <li><a href="/notes/">Notes</a></li>
                     <li><a href="/press">Press</a></li>
                     <li><a href="/tools/">Tools</a></li><li>
                 </ul>
@@ -202,7 +204,6 @@ unset($category);
                 <p>Pages</p>
                 <ul>
                     <li><a href="/about">About</a></li>
-                    <li><a href="/catalog/">Catalog</a></li>
                     <li><a href="/colophon">Colophon</a></li>
                     <li><a href="/cv">CV</a></li>
                     <li><a href="/press">Press</a></li>
