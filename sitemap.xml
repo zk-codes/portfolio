@@ -11,34 +11,34 @@
 
     <!-- PAGES -->
 
-    <!-- About -->
     <url>
+        <!-- About -->
         <ls:title>About</ls:title>
         <loc>https://lunaseeker.com/about</loc>
         <lastmod>2025-04-13</lastmod>
         <ls:category>pages</ls:category>
     </url>
 
-    <!-- Colophon -->
     <url>
+        <!-- Changelog -->
+        <ls:title>Changelog</ls:title>
+        <loc>https://lunaseeker.com/changelog</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>pages</ls:category>
+    </url>
+
+    <url>
+        <!-- Colophon -->
         <ls:title>Colophon</ls:title>
         <loc>https://lunaseeker.com/colophon</loc>
         <lastmod>2025-04-13</lastmod>
         <ls:category>pages</ls:category>
     </url>
     
-    <!-- CV -->
     <url>
+        <!-- CV -->
         <ls:title>CV</ls:title>
         <loc>https://lunaseeker.com/cv</loc>
-        <lastmod>2025-04-13</lastmod>
-        <ls:category>pages</ls:category>
-    </url>
-
-    <!-- Newsletter -->
-    <url>
-        <ls:title>Newsletter</ls:title>
-        <loc>https://lunaseeker.com/newsletter/</loc>
         <lastmod>2025-04-13</lastmod>
         <ls:category>pages</ls:category>
     </url>
@@ -70,6 +70,7 @@
     <!-- EVENTS -->
 
     <url>
+        <!-- Index -->
         <ls:title>Events</ls:title>
         <loc>https://lunaseeker.com/events/</loc>
         <lastmod>2025-05-28</lastmod>
@@ -77,8 +78,17 @@
     </url>
 
     <url>
+        <!-- HTML Day -->
         <ls:title>HTML Day</ls:title>
         <loc>https://lunaseeker.com/events/htmlday</loc>
+        <lastmod>2025-05-28</lastmod>
+        <ls:category>events</ls:category>
+    </url>
+
+    <url>
+        <!-- Pixel And Prose -->
+        <ls:title>Pixel And Prose</ls:title>
+        <loc>https://lunaseeker.com/events/pixelprose</loc>
         <lastmod>2025-05-28</lastmod>
         <ls:category>events</ls:category>
     </url>
@@ -92,19 +102,21 @@
         <ls:category>catalog</ls:category>
     </url>
 
-    <!-- Stories -->
+    <!-- Fanfiction -->
 
-    <!-- At Ease, Soldier -->
     <url>
+        <!-- At Ease, Soldier -->
         <ls:title>At Ease, Soldier</ls:title>
         <loc>https://lunaseeker.com/catalog/aes</loc>
         <lastmod>2025-05-28</lastmod>
         <ls:category>catalog</ls:category>
-        <ls:subcategory>stories</ls:subcategory>
+        <ls:subcategory>fanfiction</ls:subcategory>
     </url>
+
+    <!-- Stories -->   
     
-    <!-- Break Yourself Against The Universe -->
     <url>
+        <!-- Break Yourself Against The Universe -->
         <ls:title>Break Yourself Against The Universe</ls:title>
         <loc>https://lunaseeker.com/catalog/break</loc>
         <lastmod>2025-04-13</lastmod>
@@ -113,6 +125,7 @@
     </url>
     
     <url>
+        <!-- Bridging The Worlds -->
         <ls:title>Bridging The Worlds</ls:title>
         <loc>https://lunaseeker.com/catalog/worlds</loc>
         <lastmod>2025-04-13</lastmod>
@@ -121,6 +134,7 @@
     </url>
     
     <url>
+        <!-- Don't Show Her The Truth -->
         <ls:title>Don't Show Her The Truth</ls:title>
         <loc>https://lunaseeker.com/catalog/truth</loc>
         <lastmod>2025-04-13</lastmod>
@@ -129,6 +143,7 @@
     </url>
     
     <url>
+        <!-- Never Silence The Wild Heart -->
         <ls:title>Never Silence The Wild Heart</ls:title>
         <loc>https://lunaseeker.com/catalog/wild</loc>
         <lastmod>2025-04-13</lastmod>
@@ -137,6 +152,7 @@
     </url>
     
     <url>
+        <!-- No Good Options -->
         <ls:title>No Good Options</ls:title>
         <loc>https://lunaseeker.com/catalog/options</loc>
         <lastmod>2025-04-13</lastmod>
@@ -145,6 +161,7 @@
     </url>
     
     <url>
+        <!-- One Seed At A Time -->
         <ls:title>One Seed At A Time</ls:title>
         <loc>https://lunaseeker.com/catalog/seed</loc>
         <lastmod>2025-04-13</lastmod>
@@ -153,6 +170,7 @@
     </url>
     
     <url>
+        <!-- Our Undoing -->
         <ls:title>Our Undoing</ls:title>
         <loc>https://lunaseeker.com/catalog/undoing</loc>
         <lastmod>2025-04-13</lastmod>
@@ -161,6 +179,7 @@
     </url>
     
     <url>
+        <!-- Poetry In The Stars -->
         <ls:title>Poetry In The Stars</ls:title>
         <loc>https://lunaseeker.com/catalog/poetry</loc>
         <lastmod>2025-04-13</lastmod>
@@ -169,6 +188,7 @@
     </url>
     
     <url>
+        <!-- The Freedom Zenith -->
         <ls:title>The Freedom Zenith</ls:title>
         <loc>https://lunaseeker.com/catalog/zenith</loc>
         <lastmod>2025-04-13</lastmod>
@@ -177,6 +197,7 @@
     </url>
     
     <url>
+        <!-- Through The Universe Gate -->
         <ls:title>Through The Universe Gate</ls:title>
         <loc>https://lunaseeker.com/catalog/gate</loc>
         <lastmod>2025-04-13</lastmod>
@@ -185,6 +206,7 @@
     </url>
     
     <url>
+        <!-- Why Are You Standing There? -->
         <ls:title>Why Are You Standing There?</ls:title>
         <loc>https://lunaseeker.com/catalog/why</loc>
         <lastmod>2025-04-13</lastmod>
@@ -193,6 +215,7 @@
     </url>
     
     <url>
+        <!-- Worshipping The Wired -->
         <ls:title>Worshiping The Wired</ls:title>
         <loc>https://lunaseeker.com/catalog/wired</loc>
         <lastmod>2025-04-13</lastmod>
@@ -201,6 +224,7 @@
     </url>
     
     <url>
+        <!-- You Choose To Pull Through -->
         <ls:title>You Choose To Pull Through</ls:title>
         <loc>https://lunaseeker.com/catalog/pull</loc>
         <lastmod>2025-04-13</lastmod>
@@ -211,6 +235,7 @@
     <!-- Zines -->
     
     <url>
+        <!-- Don't Throw Any Of Yourself Away -->
         <ls:title>Don't Throw Any Of Yourself Away</ls:title>
         <loc>https://lunaseeker.com/catalog/dtaoya</loc>
         <lastmod>2025-04-13</lastmod>
@@ -219,6 +244,7 @@
     </url>
     
     <url>
+        <!-- Dreaming Of Escapes -->
         <ls:title>Dreaming Of Escapes</ls:title>
         <loc>https://lunaseeker.com/catalog/de</loc>
         <lastmod>2025-04-13</lastmod>
@@ -227,6 +253,7 @@
     </url>
 
     <url>
+        <!-- Fabled Fantasy -->
         <ls:title>Fabled Fantasy</ls:title>
         <loc>https://lunaseeker.com/catalog/ff</loc>
         <lastmod>2025-04-13</lastmod>
@@ -235,6 +262,7 @@
     </url>
     
     <url>
+        <!-- Gardening Growth -->
         <ls:title>Gardening Growth</ls:title>
         <loc>https://lunaseeker.com/catalog/gg</loc>
         <lastmod>2025-04-13</lastmod>
@@ -243,6 +271,7 @@
     </url>
     
     <url>
+        <!-- Indie Musicalities -->
         <ls:title>Indie Musicalities</ls:title>
         <loc>https://lunaseeker.com/catalog/im</loc>
         <lastmod>2025-04-13</lastmod>
@@ -251,6 +280,7 @@
     </url>
     
     <url>
+        <!-- Letters For The Longhaul -->
         <ls:title>Letters For The Longhaul</ls:title>
         <loc>https://lunaseeker.com/catalog/lfl</loc>
         <lastmod>2025-04-13</lastmod>
@@ -259,6 +289,7 @@
     </url>
     
     <url>
+        <!-- Nature Nurture -->
         <ls:title>Nature Nurture</ls:title>
         <loc>https://lunaseeker.com/catalog/nn</loc>
         <lastmod>2025-04-13</lastmod>
@@ -267,6 +298,7 @@
     </url>
     
     <url>
+        <!-- Noteworthy Non-Fiction -->
         <ls:title>Noteworthy Non-Fiction</ls:title>
         <loc>https://lunaseeker.com/catalog/nwn</loc>
         <lastmod>2025-04-13</lastmod>
@@ -275,6 +307,7 @@
     </url>
     
     <url>
+        <!-- Pushing The Character Limit -->
         <ls:title>Pushing The Character Limit</ls:title>
         <loc>https://lunaseeker.com/catalog/ptcl</loc>
         <lastmod>2025-04-13</lastmod>
@@ -283,7 +316,8 @@
     </url>
     
     <url>
-        <ls:title>Recomended Romantica</ls:title>
+        <!-- Recommended Romantica -->
+        <ls:title>Recommended Romantica</ls:title>
         <loc>https://lunaseeker.com/catalog/rr</loc>
         <lastmod>2025-04-13</lastmod>
         <ls:category>catalog</ls:category>
@@ -291,6 +325,7 @@
     </url>
     
     <url>
+        <!-- Splendid Scifi -->
         <ls:title>Splendid Scifi</ls:title>
         <loc>https://lunaseeker.com/catalog/ss</loc>
         <lastmod>2025-04-13</lastmod>
@@ -299,6 +334,7 @@
     </url>
     
     <url>
+        <!-- The Baking Brain -->
         <ls:title>The Baking Brain</ls:title>
         <loc>https://lunaseeker.com/catalog/bb</loc>
         <lastmod>2025-04-13</lastmod>
@@ -307,6 +343,7 @@
     </url>
     
     <url>
+        <!-- Vintage Vignettes -->
         <ls:title>Vintage Vignettes</ls:title>
         <loc>https://lunaseeker.com/catalog/vv</loc>
         <lastmod>2025-04-13</lastmod>
@@ -315,6 +352,7 @@
     </url>
     
     <url>
+        <!-- Yearning For YA -->
         <ls:title>Yearning For Ya</ls:title>
         <loc>https://lunaseeker.com/catalog/yy</loc>
         <lastmod>2025-04-13</lastmod>
@@ -322,9 +360,60 @@
         <ls:subcategory>zines</ls:subcategory>
     </url>
 
+    <!-- NEWSLETTER -->
+
+    <url>
+        <!-- Index -->
+        <ls:title>Newsletter</ls:title>
+        <loc>https://lunaseeker.com/newsletter/</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>newsletter</ls:category>
+    </url>
+
+    <!-- Issues-->
+
+    <url>
+        <!-- January 2025 -->
+        <ls:title>Issue #1 — January 2025</ls:title>
+        <loc>https://lunaseeker.com/newsletter/jan25</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>newsletter</ls:category>
+        <ls:subcategory>2025</ls:subcategory>
+    </url>
+
+    <url>
+        <!-- February 2025 -->
+        <ls:title>Issue #2 — February 2025</ls:title>
+        <loc>https://lunaseeker.com/newsletter/feb25</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>newsletter</ls:category>
+        <ls:subcategory>2025</ls:subcategory>
+    </url>
+
+    <url>
+        <!-- June 2025 -->
+        <ls:title>Issue #3 — June 2025</ls:title>
+        <loc>https://lunaseeker.com/newsletter/jun25</loc>
+        <lastmod>2025-04-13</lastmod>
+        <ls:category>newsletter</ls:category>
+        <ls:subcategory>2025</ls:subcategory>
+    </url>
+
+    <!-- NOTES -->
+
+    <url>
+        <!-- Index -->
+        <ls:title>Notes</ls:title>
+        <loc>https://lunaseeker.com/notes/</loc>
+        <lastmod>2025-05-28</lastmod>
+        <ls:category>notes</ls:category>
+    </url>
+
+
     <!-- TOOLS -->
 
     <url>
+        <!-- Index -->
         <ls:title>Tools</ls:title>
         <loc>https://lunaseeker.com/tools/</loc>
         <lastmod>2025-05-28</lastmod>
@@ -334,6 +423,7 @@
     <!-- Puzzles -->
 
     <url>
+        <!-- 4x4 Sudoku -->
         <ls:title>4x4 Sudoku</ls:title>
         <loc>https://lunaseeker.com/tools/4x4sudoku</loc>
         <lastmod>2025-04-13</lastmod>
@@ -342,6 +432,7 @@
     </url>
 
     <url>
+        <!-- 6x6 Sudoku -->
         <ls:title>6x6 Sudoku</ls:title>
         <loc>https://lunaseeker.com/tools/6x6sudoku</loc>
         <lastmod>2025-04-13</lastmod>
@@ -350,6 +441,7 @@
     </url>
 
     <url>
+        <!-- 9x9 Sudoku -->
         <ls:title>9x9 Sudoku</ls:title>
         <loc>https://lunaseeker.com/tools/9x9sudoku</loc>
         <lastmod>2025-04-13</lastmod>
@@ -358,6 +450,7 @@
     </url>
 
     <url>
+        <!-- Circular Maze -->
         <ls:title>Circular Maze</ls:title>
         <loc>https://lunaseeker.com/tools/circlemaze</loc>
         <lastmod>2025-04-13</lastmod>
@@ -366,6 +459,7 @@
     </url>
 
     <url>
+        <!-- Crossword -->
         <ls:title>Crossword</ls:title>
         <loc>https://lunaseeker.com/tools/crossword</loc>
         <lastmod>2025-04-13</lastmod>
@@ -374,6 +468,7 @@
     </url>
 
     <url>
+        <!-- Cryptogram -->
         <ls:title>Cryptogram</ls:title>
         <loc>https://lunaseeker.com/tools/cryptogram</loc>
         <lastmod>2025-04-13</lastmod>
@@ -382,6 +477,7 @@
     </url>
 
     <url>
+        <!-- Honeycomb Maze -->
         <ls:title>Honeycomb Maze</ls:title>
         <loc>https://lunaseeker.com/tools/4x4sudoku</loc>
         <lastmod>2025-04-13</lastmod>
@@ -390,6 +486,7 @@
     </url>
 
     <url>
+        <!-- Mini Word Search -->
         <ls:title>Mini Word Search</ls:title>
         <loc>https://lunaseeker.com/tools/miniwordsearch</loc>
         <lastmod>2025-04-13</lastmod>
@@ -398,6 +495,7 @@
     </url>
 
     <url>
+        <!-- Number Search -->
         <ls:title>Number Search</ls:title>
         <loc>https://lunaseeker.com/tools/numbersearch</loc>
         <lastmod>2025-04-13</lastmod>
@@ -406,6 +504,7 @@
     </url>
 
     <url>
+        <!-- Square Maze -->
         <ls:title>Square Maze</ls:title>
         <loc>https://lunaseeker.com/tools/squaremaze</loc>
         <lastmod>2025-04-13</lastmod>
@@ -414,6 +513,7 @@
     </url>
 
     <url>
+        <!-- Word Search -->
         <ls:title>Word Search</ls:title>
         <loc>https://lunaseeker.com/tools/wordsearch</loc>
         <lastmod>2025-04-13</lastmod>
@@ -424,6 +524,7 @@
     <!-- Writing -->
 
     <url>
+        <!-- Repeat Finder -->
         <ls:title>Repeat Finder</ls:title>
         <loc>https://lunaseeker.com/tools/repeatfinder</loc>
         <lastmod>2025-04-13</lastmod>
