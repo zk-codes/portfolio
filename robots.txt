@@ -3,5 +3,13 @@ Sitemap: https://lunaseeker.com/sitemap.xml
 User-agent: *
 Allow: /
 
+# -- Disallows
+
+# - Folders
+
 Disallow: /assets/
+
+# - Files
+
+Disallow: /.gitignore
 Disallow: /successful
