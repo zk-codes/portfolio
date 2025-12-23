@@ -1,0 +1,16 @@
+# --- HUMANS.TXT - Lunaseeker Press
+
+# -- Maintainer
+
+# Zachary Kai: zacharykai.net
+
+# -- Site
+
+# Established: 2025
+# Technologies: Static HTML + CSS, Some PHP Scripts
+# Tools: VSCodium, Vultur
+
+# -- With Thanks
+
+# James: jamesg.blog
+# Robin Sloan: robinsloan.com

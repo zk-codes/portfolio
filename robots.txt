@@ -12,4 +12,5 @@ Disallow: /assets/
 # - Files
 
 Disallow: /.gitignore
+Disallow: /humans.txt
 Disallow: /successful
