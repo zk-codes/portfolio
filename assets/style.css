@@ -69,7 +69,8 @@ body::after {
     width: 100%;
     height: 100%;
     background:
-        url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3C!-- Leaf 1 - rotated 25 degrees --%3E%3Cg transform='rotate(25 40 35)'%3E%3Cpath d='M40 15 C35 15, 30 20, 30 30 C28 33, 26 36, 28 39 C30 42, 33 43, 30 47 C27 51, 30 54, 33 57 C36 60, 38 63, 40 70 C42 63, 44 60, 47 57 C50 54, 53 51, 50 47 C47 43, 50 42, 52 39 C54 36, 52 33, 50 30 C50 20, 45 15, 40 15 Z' fill='%238b4513' fill-opacity='0.08' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.05'/%3E%3Cpath d='M40 18 L40 65' stroke='%23654321' stroke-width='0.4' stroke-opacity='0.08'/%3E%3C/g%3E%3C!-- Leaf 2 - rotated -15 degrees --%3E%3Cg transform='rotate(-15 140 80)'%3E%3Cellipse cx='140' cy='80' rx='12' ry='18' fill='%23a0522d' fill-opacity='0.07' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.04'/%3E%3Cpath d='M140 65 L140 95' stroke='%23654321' stroke-width='0.4' stroke-opacity='0.07'/%3E%3Cpath d='M140 70 L132 73 M140 75 L148 77 M140 85 L135 88' stroke='%23654321' stroke-width='0.2' stroke-opacity='0.05'/%3E%3C/g%3E%3C!-- Leaf 3 - rotated 45 degrees --%3E%3Cg transform='rotate(45 60 140)'%3E%3Cpath d='M60 125 C55 130, 50 135, 53 140 C57 138, 63 138, 67 140 C70 135, 65 130, 60 125 Z M60 140 C55 145, 50 150, 53 155 C57 153, 63 153, 67 155 C70 150, 65 145, 60 140 Z M60 155 L60 165' fill='%238b4513' fill-opacity='0.06' stroke='%23654321' stroke-width='0.2' stroke-opacity='0.04'/%3E%3Cpath d='M60 130 L60 160' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.06'/%3E%3C/g%3E%3C!-- Leaf 4 - rotated -30 degrees --%3E%3Cg transform='rotate(-30 170 40)'%3E%3Cpath d='M170 25 L165 35 L155 32 L160 45 L150 48 L160 52 L155 62 L165 58 L170 68 L175 58 L185 62 L180 52 L190 48 L180 45 L185 32 L175 35 Z' fill='%23a0522d' fill-opacity='0.06' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.04'/%3E%3Cpath d='M170 30 L170 63' stroke='%23654321' stroke-width='0.3' stroke-opacity='0.06'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat 0 0 / 200px 200px;
+        url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cg transform='rotate(25 40 35)'%3E%3Cpath d='M40 15 C35 15, 30 20, 30 30 C28 33, 26 36, 28 39 C30 42, 33 43, 30 47 C27 51, 30 54, 33 57 C36 60, 38 63, 40 70 C42 63, 44 60, 47 57 C50 54, 53 51, 50 47 C47 43, 50 42, 52 39 C54 36, 52 33, 50 30 C50 20, 45 15, 40 15 Z' fill='%23d4a574' fill-opacity='0.04' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.03'/%3E%3Cpath d='M40 18 L40 65' stroke='%23b8956a' stroke-width='0.4' stroke-opacity='0.04'/%3E%3C/g%3E%3Cg transform='rotate(-15 140 80)'%3E%3Cellipse cx='140' cy='80' rx='12' ry='18' fill='%23c9a961' fill-opacity='0.04' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.03'/%3E%3Cpath d='M140 65 L140 95' stroke='%23b8956a' stroke-width='0.4' stroke-opacity='0.04'/%3E%3Cpath d='M140 70 L132 73 M140 75 L148 77 M140 85 L135 88' stroke='%23b8956a' stroke-width='0.2' stroke-opacity='0.03'/%3E%3C/g%3E%3Cg transform='rotate(45 60 140)'%3E%3Cpath d='M60 125 C55 130, 50 135, 53 140 C57 138, 63 138, 67 140 C70 135, 65 130, 60 125 Z M60 140 C55 145, 50 150, 53 155 C57 153, 63 153, 67 155 C70 150, 65 145, 60 140 Z M60 155 L60 165' fill='%23d4a574' fill-opacity='0.03' stroke='%23b8956a' stroke-width='0.2' stroke-opacity='0.02'/%3E%3Cpath d='M60 130 L60 160' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.03'/%3E%3C/g%3E%3Cg transform='rotate(-30 170 40)'%3E%3Cpath d='M170 25 L165 35 L155 32 L160 45 L150 48 L160 52 L155 62 L165 58 L170 68 L175 58 L185 62 L180 52 L190 48 L180 45 L185 32 L175 35 Z' fill='%23c9a961' fill-opacity='0.03' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.02'/%3E%3Cpath d='M170 30 L170 63' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.03'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") 
+        repeat 0 0 / 200px 200px;
     pointer-events: none;
     z-index: -1;
 
@@ -368,20 +369,75 @@ img, picture {
 /* -- Dark Mode */
 
 @media (prefers-color-scheme: dark) {
+
     :root {
-        --parchment: #1e2019;
-        --whisper: #252820;
-        --ink-dark: #e8e5d3;
-        --ink-medium: #c5c2b0;
-        --ink-light: #a8a594;
-        --shadow: rgba(255, 255, 255, 0.1);
-        --soft-shadow: rgba(255, 255, 255, 0.05);
+        --parchment: #1a1612; 
+        --text: #e8dcc8; 
+        --dust-gold: #d4a574; 
+        --whisper: #22201b; --shadow: rgba(212, 165, 116, 0.15); 
+        --soft-shadow: rgba(212, 165, 116, 0.08); 
+        --fern: #8fa954; 
+        --sky: #5a9eb8; 
+        --sunset: #d97b5f; 
+        --forest: #7ba83d;
     }
+
+    body::before {
+        background: 
+            radial-gradient(circle at 20% 30%, rgba(212, 165, 116, 0.12) 0%, transparent 40%), 
+            radial-gradient(circle at 80% 70%, rgba(180, 142, 95, 0.09) 0%, transparent 35%), 
+            radial-gradient(circle at 60% 20%, rgba(222, 184, 135, 0.06) 0%, transparent 30%), 
+            radial-gradient(circle at 30% 80%, rgba(205, 170, 125, 0.08) 0%, transparent 45%), 
+            repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(160, 120, 80, 0.08) 3px, rgba(160, 120, 80, 0.08) 4px), 
+            repeating-linear-gradient(90deg, transparent, transparent 4px, rgba(219, 147, 59, 0.06) 4px, rgba(180, 140, 90, 0.06) 5px), #1a1612; 
+        pointer-events: none; z-index: -2;
+    }
+
+    body::after {
+        background: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cg transform='rotate(25 40 35)'%3E%3Cpath d='M40 15 C35 15, 30 20, 30 30 C28 33, 26 36, 28 39 C30 42, 33 43, 30 47 C27 51, 30 54, 33 57 C36 60, 38 63, 40 70 C42 63, 44 60, 47 57 C50 54, 53 51, 50 47 C47 43, 50 42, 52 39 C54 36, 52 33, 50 30 C50 20, 45 15, 40 15 Z' fill='%23d4a574' fill-opacity='0.11' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.08'/%3E%3Cpath d='M40 18 L40 65' stroke='%23b8956a' stroke-width='0.4' stroke-opacity='0.10'/%3E%3C/g%3E%3Cg transform='rotate(-15 140 80)'%3E%3Cellipse cx='140' cy='80' rx='12' ry='18' fill='%23c9a961' fill-opacity='0.10' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.07'/%3E%3Cpath d='M140 65 L140 95' stroke='%23b8956a' stroke-width='0.4' stroke-opacity='0.09'/%3E%3Cpath d='M140 70 L132 73 M140 75 L148 77 M140 85 L135 88' stroke='%23b8956a' stroke-width='0.2' stroke-opacity='0.07'/%3E%3C/g%3E%3Cg transform='rotate(45 60 140)'%3E%3Cpath d='M60 125 C55 130, 50 135, 53 140 C57 138, 63 138, 67 140 C70 135, 65 130, 60 125 Z M60 140 C55 145, 50 150, 53 155 C57 153, 63 153, 67 155 C70 150, 65 145, 60 140 Z M60 155 L60 165' fill='%23d4a574' fill-opacity='0.09' stroke='%23b8956a' stroke-width='0.2' stroke-opacity='0.06'/%3E%3Cpath d='M60 130 L60 160' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.08'/%3E%3C/g%3E%3Cg transform='rotate(-30 170 40)'%3E%3Cpath d='M170 25 L165 35 L155 32 L160 45 L150 48 L160 52 L155 62 L165 58 L170 68 L175 58 L185 62 L180 52 L190 48 L180 45 L185 32 L175 35 Z' fill='%23c9a961' fill-opacity='0.09' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.06'/%3E%3Cpath d='M170 30 L170 63' stroke='%23b8956a' stroke-width='0.3' stroke-opacity='0.08'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat 0 0 / 200px 200px; 
+        pointer-events: 
+        none; z-index: -1;
+    }
+    
+    body {
+        background: linear-gradient(135deg, var(--parchment) 0%, var(--whisper) 100%);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--forest);
+    }
+
+    a {
+        color: var(--fern); text-decoration-color: var(--fern);
+    }
+
+    a:hover {
+        color: var(--sunset); 
+        text-decoration-color: var(--dust-gold);
+    }
+
+    ::selection {
+        background: var(--forest); color: var(--parchment);
+    }
+
+    pre code {
+        background: rgba(0, 0, 0, 0.3); 
+        color: var(--dust-gold); 
+        border: 1px solid rgba(212, 165, 116, 0.2);
+    }
+
+    blockquote {
+        border-left: 6px solid var(--forest); 
+        border-top: 1px solid var(--fern); 
+        border-bottom: 1px solid var(--fern);
+    }
+
 }
 
 /* -- Responsive */
 
 @media (max-width: 40em) {
+
     main {
         display: block;
     }
