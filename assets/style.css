@@ -20,9 +20,7 @@
 /* ---------- Variables */
 
 :root {
-
     /* -- Colors */
-
     --parchment: #fdf6e3;
     --text: #181A1A;
     --dust-gold: #c9a961;
@@ -33,7 +31,6 @@
     --sky: #87ceeb;
     --sunset: #ff6b47;
     --forest: #228b22;
-
 }
 
 /* ---------- Background */
@@ -73,7 +70,6 @@ body::after {
         repeat 0 0 / 200px 200px;
     pointer-events: none;
     z-index: -1;
-
 }
 
 figcaption {
@@ -103,7 +99,7 @@ body {
     background: linear-gradient(135deg, var(--parchment) 0%, var(--whisper) 100%);
     min-height: 100vh;
     position: relative;
-    max-width: 55rem;
+    max-width: 60rem;
     margin: auto;
 }
 
