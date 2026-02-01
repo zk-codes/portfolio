@@ -54,7 +54,7 @@
 
                 <!-- Page Header -->
                 <header>
-                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • <a href="/offerings/">Offerings</a> • Zine-Making</p>
+                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • <a href="/offerings/">Offerings</a> ↴</p>
                     <h1>Zine-Making</h1>
                     <p class="smalltext">
                         <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
@@ -64,11 +64,19 @@
                 </header>
 
                 <!-- Page Body -->
-
-                <!-- Zine-Making Services -->
                 <section>
-                    <p>Zines are a beautiful, accessible medium for sharing your work, ideas, and creativity. Whether you want a digital zine for wide distribution or a handmade edition with that tactile, personal touch, I can help bring your vision to life.</p>
 
+                    <section>
+                        <!-- Introduction-->
+                        <p>Zines are a beautiful medium for sharing your work and ideas. Whether you want a digital zine or a handmade edition, I can help!</p>
+
+                        <!-- Featured Image -->
+                        <picture>
+                            <source srcset="/assets/imgs/webp/offerings_zines.webp" type="image/webp">
+                            <img loading="lazy" src="/assets/imgs/jpg/offerings_zines.jpg" alt="A flatlay showing handmade and digitally-typeset zines.">
+                        </picture>
+                    </section>
+                    
                     <!-- Types -->
                     <section>
                         <h2>What I Offer</h2>
@@ -88,9 +96,9 @@
                         <ul>
                             <li>Hand-assembled and bound editions</li>
                             <li>Custom covers and embellishments</li>
-                            <li>Small batch production (5-50 copies)</li>
+                            <li>The original mailed to you for your printing</li>
                             <li>Mixed media and collage elements</li>
-                            <li>Unique binding techniques (saddle-stitch, Japanese stab binding, etc.)</li>
+                            <li>Unique binding techniques (saddle-stitch, stab binding, etc.)</li>
                         </ul>
                     </section>
 
@@ -125,7 +133,7 @@
                     <!-- Experience -->
                     <section>
                         <h2>Experience</h2>
-                        <p>As a zinester myself, I understand the DIY ethos and the importance of authenticity. I've created numerous zines for my own projects and have experience with:</p>
+                        <p>As a zinester, I understand the DIY ethos and the importance of authenticity. I've created numerous zines and have experience with:</p>
                         <ul>
                             <li>Multiple binding and folding techniques</li>
                             <li>Print production and optimization</li>
@@ -139,10 +147,9 @@
                         <h2>Pricing</h2>
                         <p>Pricing varies based on project scope, complexity, and whether you need digital or physical zines:</p>
                         <ul>
-                            <li><strong>Digital Zine Design</strong>: Starting at $50 for simple layouts (8-16 pages)</li>
-                            <li><strong>Complex Digital Layouts</strong>: $75-150 for multi-page projects with extensive design</li>
+                            <li><strong>Digital Zine</strong>: Starting at $50 for simple layouts (8-16 pages)</li>
+                            <li><strong>Complex Digital Layouts</strong>: $75-150 for multi-page extensive projects</li>
                             <li><strong>Handmade Zines</strong>: Quote based on materials, page count, and edition size</li>
-                            <li><strong>Consultation & Planning</strong>: Free for initial discussion</li>
                         </ul>
                         <p>I offer sliding scale rates for community projects, activists, and those with limited budgets. Let's talk about what works for you!</p>
                     </section>
@@ -174,19 +181,15 @@
                             <br>
                             <input type="number" id="page-count" name="page_count" min="1" required placeholder="e.g., 8, 16, 24">
                             <br>
-                            <label for="edition-size">If handmade, how many copies?:</label>
-                            <br>
-                            <input type="number" id="edition-size" name="edition_size" min="1" placeholder="Leave blank for digital only">
-                            <br>
                             <label for="zine-timeline">Desired timeline:*</label>
                             <br>
                             <input type="text" id="zine-timeline" name="timeline" required placeholder="e.g., 2 weeks, 1 month">
                             <br>
                             <label for="zine-project-description">Tell me about your zine project:*</label>
                             <br>
-                            <textarea id="zine-project-description" name="project_description" required placeholder="What's your zine about? What's your vision? Any specific style or format ideas?"></textarea>
+                            <textarea id="zine-project-description" name="project_description" required></textarea>
                             <br>
-                            <label for="zine-captcha">Type in this page's name:*</label>
+                            <label for="zine-captcha">Type in this page's name (the heading at the top):*</label>
                             <br>
                             <input type="text" id="zine-captcha" name="captcha" required>
                             <br>
