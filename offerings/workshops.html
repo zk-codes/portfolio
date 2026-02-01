@@ -10,11 +10,11 @@
         <link rel="stylesheet" href="/assets/style.css">
         <link rel="webmention" href="https://webmention.io/lunaseeker.com/webmention" />
         <!-- Page Details -->
-        <title>Offerings</title>
-        <link rel="canonical" href="https://lunaseeker.com/offerings">
+        <title>Workshops - Offerings</title>
+        <link rel="canonical" href="https://lunaseeker.com/offerings/workshops">
         <meta name="date" content="2025-07-21">
         <meta name="last-modified" content="2025-10-11">
-        <meta name="description" content="These are all the offerings I have: services, items, and other miscellania for your perusal.">
+        <meta name="description" content="Engaging creative workshops for groups, libraries, and schools covering drawing, writing, worldbuilding, and zine-making.">
     </head>
 
     <body>
@@ -53,142 +53,19 @@
 
                 <!-- Page Header -->
                 <header>
-                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • Offerings</p>
-                    <h1>Offerings</h1>
+                    <p class="smalltext">You Are Here ➸ <a href="https://lunaseeker.com">Homepage</a> • <a href="/offerings/">Offerings</a> • Workshops</p>
+                    <h1>Workshops</h1>
                     <p class="smalltext">
                         <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
-                        <strong>Published</strong>: <time class="dt-published" datetime="2025-07-21">21 Jul 2025</time> | 
+                        <strong>Published</strong>: <time class="dt-published" datetime="2025-07-21">21 Jul 2025</time> |
                         <strong>Updated</strong>: <time class="dt-modified" datetime="2025-10-11">11 Oct 2025</time>
                     </p>
                 </header>
-                
+
                 <!-- Page Body -->
-
-                <!-- Intro -->
-                <section>
-                    <p>Welcome! I offer various things, from services, written works, and other accoturements. Have a browse, and let me know if you have questions!</p>
-                </section>
-                <section>
-                    <details>
-                        <summary><strong>Table Of Contents</strong></summary>
-                        <ul>
-                            <li><a href="#editing">Editing</a></li>
-                            <li><a href="#workshops">Workshops</a></li>
-                        </ul>
-                    </details>
-                </section>
-
-                <!-- Editing Services -->
-                <section>
-                    <h2 id="editing">Editing</h2>
-                    <p>I offer editing for fiction and non-fiction, bringing careful attention, respect, enthusiasm, and eight years of experience.</p>
-
-                    <!-- Types -->
-                    <section>
-                        <h3>Types</h3>
-                        <ul>
-                            <li><strong>Fiction</strong>: Developmental editing for narrative, characters, and pacing. Line editing for style. Copy editing for grammar and consistency.</li>
-                            <li><strong>Non-Fiction</strong>: Structural editing for clarity and organization. Line editing for readability and tone. Copy editing for accuracy and style.</li>
-                            <li><strong>Manuscript Assessment</strong>: Comprehensive and detailed feedback on strengths, improvements, and suggestions for your next draft.</li>
-                            <li><strong>Proofreading</strong>: Final review for typos, formatting issues, and minor errors before publication or submission.</li>
-                        </ul>
-                    </section>
-
-                    <!-- What I Work With -->
-                    <section>
-                        <h3>What I Work With</h3>
-                        <p>I adore working with:</p>
-                        <ul>
-                            <li>Literary fiction, speculative fiction, and experimental narratives</li>
-                            <li>Personal essays, memoirs, and creative non-fiction</li>
-                            <li>Zines, chapbooks, and independent publications</li>
-                        </ul>
-                    </section>
-
-                    <!-- Process -->
-                    <section>
-                        <h3>My Process</h3>
-                        <p>Every project begins with you and what'll serve you best. I provide:</p>
-                        <ul>
-                            <li>Clear communication about scope and timeline</li>
-                            <li>Sample edit of 1-2 pages before committing to larger projects</li>
-                            <li>Recorded changes and comments explaining suggestions</li>
-                            <li>Respect for your voice while strengthening clarity and impact</li>
-                        </ul>
-                    </section>
-
-                    <!-- Pricing -->
-                    <section>
-                        <h3>Pricing</h3>
-                        <p>Rates vary by project type and length:</p>
-                        <ul>
-                            <li><strong>Developmental/Structural Editing</strong>: $0.02 per word</li>
-                            <li><strong>Line Editing</strong>: $0.015 per word</li>
-                            <li><strong>Copy Editing</strong>: $0.01 per word</li>
-                            <li><strong>Proofreading</strong>: $0.008 per word</li>
-                            <li><strong>Manuscript Assessment</strong>: $200-400 depending on length</li>
-                        </ul>
-                        <p>I also offer sliding scale rates. Let's discuss what works for you!</p>
-                    </section>
-
-                    <!-- Booking -->
-                    <section>
-                        <h3>Get Your Work Edited</h3>
-                        <p><strong>Ready to polish your writing?</strong> Fill out the form below!</p>
-                        <form action="/assets/scripts/submissions.php" method="POST">
-                            <label for="edit-name">Write how you'd like me to refer to you:*</label>
-                            <br>
-                            <input type="text" id="edit-name" name="name" required autocomplete="given-name">
-                            <br>
-                            <label for="edit-email">Type your email in here:*</label>
-                            <br>
-                            <input type="email" id="edit-email" name="email" required autocomplete="email">
-                            <br>
-                            <label for="work-type">Type of work:*</label>
-                            <br>
-                            <select id="work-type" name="work_type" required>
-                                <option value="">-- Select type --</option>
-                                <option value="Fiction">Fiction</option>
-                                <option value="Non-Fiction">Non-Fiction</option>
-                            </select>
-                            <br>
-                            <label for="edit-service">Editing service needed:*</label>
-                            <br>
-                            <select id="edit-service" name="edit_service" required>
-                                <option value="">-- Select service --</option>
-                                <option value="Developmental">Developmental/Structural Editing</option>
-                                <option value="Line">Line Editing</option>
-                                <option value="Copy">Copy Editing</option>
-                                <option value="Proofreading">Proofreading</option>
-                                <option value="Assessment">Manuscript Assessment</option>
-                            </select>
-                            <br>
-                            <label for="word-count">Approximate word count:*</label>
-                            <br>
-                            <input type="number" id="word-count" name="word_count" min="1" required>
-                            <br>
-                            <label for="timeline">Desired timeline:*</label>
-                            <br>
-                            <input type="text" id="timeline" name="timeline" required placeholder="e.g., 2 weeks, 1 month">
-                            <br>
-                            <label for="project-description">Tell me about your project:*</label>
-                            <br>
-                            <textarea id="project-description" name="project_description" required></textarea>
-                            <br>
-                            <label for="edit-captcha">Type in this page's name:*</label>
-                            <br>
-                            <input type="text" id="edit-captcha" name="captcha" required>
-                            <br>
-                            <input type="hidden" name="form_type" value="editing">
-                            <button type="submit">Submit Your Inquiry!</button>
-                        </form>
-                    </section>
-                    
-                </section>
 
                 <!-- Workshops -->
                 <section>
-                    <h2 id="workshops">Workshops</h2>
                     <p>I create engaging sessions blending practical instruction with creative exploration for art/community/homeschool/writing groups, libraries, and schools. And, perhaps, you? Every workshop I run is:</p>
                     <ul>
                         <li>Adaptable to: age groups, experience levels</li>
@@ -198,7 +75,7 @@
 
                     <!-- Types -->
                     <section>
-                        <h3>Types</h3>
+                        <h2>Types</h2>
                         <ul>
                             <li><strong>Drawing For Fun</strong>: Accessible collaborative prompts, games, and excersises for enjoyement and expression, regardless of skill level.</li>
                             <li><strong>Creative Writing</strong>: Targeted writing prompts to spark imagination, exploring narrative, character, and dialogue. Writing as nourishment.</li>
@@ -209,8 +86,8 @@
 
                     <!-- Experience -->
                     <section>
-                        <h3>Experience</h3>
-                        <h4>Past Workshops</h4>
+                        <h2>Experience</h2>
+                        <h3>Past Workshops</h3>
                         <ul>
                             <li>Jun 2023: Worldbuilding workshop for an online Australian teen writing group</li>
                             <li>Sep-Nov 2019: Weekly writing workshops for homeschooled teens in Andalusia, Spain</li>
@@ -220,7 +97,7 @@
 
                     <!-- Testimonials -->
                     <section>
-                        <h3>Testimonials</h3>
+                        <h2>Testimonials</h2>
                         <blockquote>
                             <p>"The online worldbuilding workshop led by Zach for our youth online writing group was engaging. Zach provided fun exercises and prompts for our participants to craft richer fictional worlds."</p>
                             <cite><strong>Nevo Zisin</strong>, writer, speaker, community organizer and <strong>Alison Evans</strong>, writer, bookseller</cite>
@@ -232,13 +109,13 @@
                     </section>
 
                     <section>
-                        <h3>Pricing</h3>
+                        <h2>Pricing</h2>
                         <p>My rates are $75 USD an hour. I also offer sliding scale.</p>
                     </section>
 
                     <!-- Booking -->
                     <section>
-                        <h3>Booking</h3>
+                        <h2>Booking</h2>
                         <p>I'm available for online workshops, whether single sessions (1-2 hours) or multi-session series (ideal for deeper skill development.
                         <p><strong>Ready to discuss a workshop for your organization?</strong></p>
                         <p>Fill out the form below! </p>
@@ -293,7 +170,7 @@
                 </section>
 
                 <p>•--♡--•</p>
-                
+
                 <!-- Footer -->
                 <footer>
                     <hr>
