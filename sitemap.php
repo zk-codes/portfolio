@@ -197,6 +197,7 @@ unset($category);
                     <li><a href="/events/">Events</a></li>
                     <li><a href="/newsletter/">Newsletter</a></li>
                     <li><a href="/notes/">Notes</a></li>
+                    <li><a href="/offerings/">Offerings</a></li>
                     <li><a href="/press">Press</a></li>
                     <li><a href="/tools/">Tools</a></li><li>
                 </ul>
