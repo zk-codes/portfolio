@@ -43,6 +43,14 @@
         <ls:category>pages</ls:category>
     </url>
 
+    <url>
+        <!-- Elsewhere -->
+        <ls:title>Elsewhere</ls:title>
+        <loc>https://lunaseeker.com/elsewhere</loc>
+        <lastmod>2026-02-05</lastmod>
+        <ls:category>pages</ls:category>
+    </url>
+
     <!-- Offerings -->
     <url>
         <ls:title>Offerings</ls:title>
