@@ -13,7 +13,7 @@
         <title>Website Making - Offerings</title>
         <link rel="canonical" href="https://lunaseeker.com/offerings/websites">
         <meta name="date" content="2025-07-21">
-        <meta name="last-modified" content="2025-10-11">
+        <meta name="last-modified" content="2026-04-03">
         <meta name="description" content="Delightful and snappy personal websites built with static HTML - fast, secure, and entirely yours.">
     </head>
 
@@ -59,7 +59,7 @@
                     <p class="smalltext">
                         <strong>Written By</strong>: <a href="/about">Zachary Kai</a> »
                         <strong>Published</strong>: <time class="dt-published" datetime="2025-07-21">21 Jul 2025</time> |
-                        <strong>Updated</strong>: <time class="dt-modified" datetime="2025-10-11">11 Oct 2025</time>
+                        <strong>Updated</strong>: <time class="dt-modified" datetime="2026-04-03">3 Apr 2026</time>
                     </p>
                 </header>
 
@@ -83,72 +83,107 @@
                         <!-- Why Static HTML -->
                         <h2>Why Static HTML?</h2>
                         <p>Static sites are just files, like documents! There's nothing to hack or break. They load instantly, last forever, and cost almost nothing to publish.</p>
-                        <p>I taught myself to code because everyone deserves a space on the web. I've made my sites (this one, <a href="https://zacharykai.net" rel="noopener">zacharykai.net</a>, <a href="https://roadlessread.com" rel="noopener">roadlessread.com</a>) and love the indie web. Your work shouldn't be held hostage. Nor should breaking free be hard.</p>
+                        <p>I taught myself to code because everyone deserves a space on the web. I've made my sites, several others, and love the indie web. Your work shouldn't be held hostage. Nor should breaking free be hard.</p>
+
+                        <section>
+                            <h3>Portfolio</h3>
+                            <p>I've hand-coded the site you're reading this on, <a href="https://zacharykai.net" rel="noopener">my personal site</a>, <a href="https://roadlessread.com" rel="noopener">book blog</a>, and my <a href="https://lab.lunaseeker.com" rel="noopener">experiments site</a>.</p>
+                            <p>I've also built the <a href="https://indiepresswebring.com" rel="noopener">Indie Press Webring</a>.</p>
+                        </section>
+
                     </section>
 
                     <!-- FAQ -->
                     <section>
                         <h2>Frequently Asked Questions</h2>
 
-                        <h3>Can I Update It Myself?</h3>
-                        <p>Yes! If you're comfortable with (or want to learn) you can update your site. The files are yours! If you'd rather not, I offer small updates for a modest fee, or we can discuss a simple ongoing arrangement.</p>
+                        <!-- Can I Update It Myself? -->
+                        <section>
+                            <h3>Can I Update It Myself?</h3>
+                            <p>Yes! If you're comfortable with (or want to learn) you can update your site. The files are yours! If you'd rather not, I offer small updates for a modest fee, or we can discuss a simple ongoing arrangement.</p>
+                        </section>
 
-                        <h3>What About A Blog?</h3>
-                        <p>For simple blogging, I can build a basic blog or help you set up a complementary platform that links to your main site. Complex blogging is better served by dedicated tools.</p>
+                        <!-- What About A Blog? -->
+                        <section>
+                            <h3>What About A Blog?</h3>
+                            <p>For simple blogging, I can build a basic blog or help you set up a complementary platform that links to your main site. Complex blogging is better served by dedicated tools.</p>
+                        </section>
 
-                        <h3>What About Selling Things?</h3>
-                        <p>I recommend places like Gumroad or Ko-Fi. Your site can link to these. Building a full shop would be a different (much larger) project.</p>
+                        <!-- What About Selling Things? -->
+                        <section>
+                            <h3>What About Selling Things?</h3>
+                            <p>I recommend places like Gumroad or Ko-Fi. Your site can link to these. Building a full shop would be a different (much larger) project.</p>
+                        </section>
+                        
                     </section>
 
                     <!-- Booking -->
                     <section>
                         <h2>Get Your Website Built</h2>
                         <p><strong>Ready to claim your space on the web?</strong> Fill out the form below!</p>
-                        <form action="/assets/scripts/submissions.php" method="POST">
-                            <label for="web-name">Write how you'd like me to refer to you:*</label>
-                            <br>
-                            <input type="text" id="web-name" name="name" required autocomplete="given-name">
-                            <br>
-                            <label for="web-email">Type your email in here:*</label>
-                            <br>
-                            <input type="email" id="web-email" name="email" required autocomplete="email">
-                            <br>
-                            <label for="package-type">Which package are you interested in?:*</label>
-                            <br>
-                            <select id="package-type" name="package_type" required>
-                                <option value="">-- Select package --</option>
-                                <option value="Single-Page">Single-Page ($75)</option>
-                                <option value="Several-Page">Several-Page ($100)</option>
-                                <option value="Multi-Page">Multi-Page ($125)</option>
-                            </select>
-                            <br>
-                            <label for="website-purpose">What's the purpose of your website?:*</label>
-                            <br>
-                            <select id="website-purpose" name="website_purpose" required>
-                                <option value="">-- Select purpose --</option>
-                                <option value="Portfolio">Portfolio</option>
-                                <option value="Personal Blog">Personal Blog</option>
-                                <option value="Author Site">Author Site</option>
-                                <option value="Artist Site">Artist Site</option>
-                                <option value="Landing Page">Landing Page</option>
-                                <option value="Other">Other (please specify in message)</option>
-                            </select>
-                            <br>
-                            <label for="web-timeline">Desired timeline:*</label>
-                            <br>
-                            <input type="text" id="web-timeline" name="timeline" required placeholder="e.g., 1 week, 2 weeks">
-                            <br>
-                            <label for="web-project-description">Tell me about your project and vision:*</label>
-                            <br>
-                            <textarea id="web-project-description" name="project_description" required></textarea>
-                            <br>
-                            <label for="web-captcha">Type in this page's name (the heading at the top of the page):*</label>
-                            <br>
-                            <input type="text" id="web-captcha" name="captcha" required>
-                            <br>
-                            <input type="hidden" name="form_type" value="website">
-                            <button type="submit">Submit Your Inquiry!</button>
-                        </form>
+                       
+                        <!-- Form -->
+                        <section>
+                            <form action="/assets/scripts/submissions.php" method="POST">
+                                <!-- Name -->
+                                <label for="web-name">Write how you'd like me to refer to you:*</label>
+                                <br>
+                                <input type="text" id="web-name" name="name" required autocomplete="given-name">
+                                <br>
+                                <!-- Email -->
+                                <label for="web-email">Type your email in here:*</label>
+                                <br>
+                                <input type="email" id="web-email" name="email" required autocomplete="email">
+                                <br>
+                                <!-- Package Type -->
+                                <label for="package-type">Which package are you interested in?:*</label>
+                                <br>
+                                <select id="package-type" name="package_type" required>
+                                    <option value="">-- Select package --</option>
+                                    <option value="Single-Page">Single-Page ($75)</option>
+                                    <option value="Several-Page">Several-Page ($100)</option>
+                                    <option value="Multi-Page">Multi-Page ($125)</option>
+                                </select>
+                                <br>
+                                <!-- Website Purpose -->
+                                <label for="website-purpose">What's the purpose of your website?:*</label>
+                                <br>
+                                <select id="website-purpose" name="website_purpose" required>
+                                    <option value="">-- Select purpose --</option>
+                                    <option value="Portfolio">Portfolio</option>
+                                    <option value="Personal Blog">Personal Blog</option>
+                                    <option value="Author Site">Author Site</option>
+                                    <option value="Artist Site">Artist Site</option>
+                                    <option value="Landing Page">Landing Page</option>
+                                    <option value="Other">Other (please specify)</option>
+                                </select>
+                                <br>
+                                <!-- Timeline -->
+                                <label for="web-timeline">Desired timeline:*</label>
+                                <br>
+                                <input type="text" id="web-timeline" name="timeline" required placeholder="e.g., 1 week, 2 weeks">
+                                <br>
+                                <!-- Project Description -->
+                                <label for="web-project-description">Tell me about your project and vision:*</label>
+                                <br>
+                                <textarea id="web-project-description" name="project_description" required></textarea>
+                                <br>
+                                <!-- Budget -->
+                                <label for="web-budget">What's your budget? (optional)</label>
+                                <br>
+                                <input type="text" id="web-budget" name="budget" placeholder="e.g., $100, flexible, unsure">
+                                <br>
+                                <!-- Captcha -->
+                                <label for="web-captcha">Type in this page's name (the heading at the top of the page):*</label>
+                                <br>
+                                <input type="text" id="web-captcha" name="captcha" required>
+                                <br>
+                                <!-- Submit -->
+                                <input type="hidden" name="form_type" value="website">
+                                <button type="submit">Submit Your Inquiry!</button>
+                            </form>
+                        </section>
+                        <!-- End Form -->
                     </section>
 
                 </section>
