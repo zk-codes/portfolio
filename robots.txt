@@ -21,3 +21,7 @@ Disallow: /502.html
 Disallow: /503.html
 Disallow: /humans.txt
 Disallow: /successful
+
+# -- Exceptions
+
+Allow: /assets/rss.xml
