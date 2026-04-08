@@ -261,6 +261,30 @@ select, option, button {
     margin-bottom: 0.5em;
 }
 
+button {
+    background: var(--forest);
+    color: var(--parchment);
+    border: 2px solid var(--forest);
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px var(--shadow);
+}
+
+button:hover {
+    background: var(--dust-gold);
+    border-color: var(--dust-gold);
+    color: var(--text);
+    box-shadow: 0 5px 15px var(--shadow);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px var(--shadow);
+}
+
 /* -- Quotes */
 
 blockquote {
